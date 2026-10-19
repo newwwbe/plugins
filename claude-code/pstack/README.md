@@ -6,7 +6,7 @@ Claude Code port of the [pstack](../../pstack/) Cursor plugin by [poteto](https:
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install pstack@cursor-plugins
+/plugin install pstack@newwwbe
 ```
 
 For the full set, also install `cursor-team-kit` from the same marketplace. pstack's playbooks call its `deslop`, `control-cli`, and `control-ui` skills.

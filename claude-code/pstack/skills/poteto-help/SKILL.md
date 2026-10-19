@@ -36,7 +36,7 @@ When the model block is missing and it matters, ask whether the user wants to pi
 
 ## Get set up
 
-1. Install with `/plugin marketplace add newwwbe/plugins`, then `/plugin install pstack@cursor-plugins`.
+1. Install with `/plugin marketplace add newwwbe/plugins`, then `/plugin install pstack@newwwbe`.
 2. Run [`/pstack:setup-pstack`](../setup-pstack/SKILL.md). It asks for a budget, maps a Claude model (`opus`, `sonnet`, `haiku`, or `inherit`) to each role, and writes a `pstack-models` block into `~/.claude/CLAUDE.md`. The block applies to new sessions.
 3. Start a real task with `/pstack:poteto-mode`, a goal, and a check that can pass or fail.
 

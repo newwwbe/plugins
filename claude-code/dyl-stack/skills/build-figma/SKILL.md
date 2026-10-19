@@ -8,7 +8,7 @@ description: "Use for \"/dyl-stack:build-figma\", a figma.com/design URL with no
 
 Orchestrator for Figma → production UI. It does **not** replace the skills below. Read each when that phase starts; do not restate them here.
 
-**Requires** a connected Figma MCP server and `cursor-team-kit`. Check first with [../dyl-mode/references/requirements.md](../dyl-mode/references/requirements.md). Missing → stop and tell the user what to install (`/plugin install cursor-team-kit@cursor-plugins`; for Figma, connect Figma's MCP server with `claude mcp add` or install a Figma plugin that bundles it).
+**Requires** a connected Figma MCP server and `cursor-team-kit`. Check first with [../dyl-mode/references/requirements.md](../dyl-mode/references/requirements.md). Missing → stop and tell the user what to install (`/plugin install cursor-team-kit@newwwbe`; for Figma, connect Figma's MCP server with `claude mcp add` or install a Figma plugin that bundles it).
 
 Failure modes that shaped the gates: [references/failure-lessons.md](references/failure-lessons.md).
 

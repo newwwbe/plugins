@@ -6,7 +6,7 @@ Claude Code port of the [Create Plugin](../../create-plugin/) Cursor plugin: met
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install create-plugin@cursor-plugins
+/plugin install create-plugin@newwwbe
 ```
 
 ## Usage

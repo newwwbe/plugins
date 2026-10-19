@@ -19,7 +19,7 @@ It is designed to avoid noisy rewrites by:
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install continual-learning@cursor-plugins
+/plugin install continual-learning@newwwbe
 ```
 
 The hook and helper need `bash` and `jq` on your `PATH`.

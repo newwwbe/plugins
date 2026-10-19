@@ -6,7 +6,7 @@ Claude Code port of the [Thermos](../../thermos/) Cursor plugin: deep correctnes
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install thermos@cursor-plugins
+/plugin install thermos@newwwbe
 ```
 
 ## Usage

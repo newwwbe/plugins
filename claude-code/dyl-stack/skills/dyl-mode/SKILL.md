@@ -13,7 +13,7 @@ disable-model-invocation: true
 
 Thin router over pstack's `poteto-mode`. Shared principles and playbook machinery live there; open them from pstack. Dylan gates win on conflict.
 
-**Requires** `pstack` and `cursor-team-kit`. Check first with [references/requirements.md](references/requirements.md), which also says how to reach pstack's hidden skills. Missing → stop and tell the user to run `/plugin install <name>@cursor-plugins`.
+**Requires** `pstack` and `cursor-team-kit`. Check first with [references/requirements.md](references/requirements.md), which also says how to reach pstack's hidden skills. Missing → stop and tell the user to run `/plugin install <name>@newwwbe`.
 
 **Routing.** `/dyl-stack:dyl-mode` runs in the conversation that invoked it: that conversation owns the playbook, the todo list, and every Agent spawn (Claude Code subagents cannot spawn their own subagents). Delegates use `subagent_type: "dyl-stack:dyl-agent"`. Do not hand this skill to `general-purpose`; it would skip the reads below.
 

@@ -6,7 +6,7 @@ Claude Code port of the [CLI for Agents](../../cli-for-agent/) Cursor plugin. It
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install cli-for-agent@cursor-plugins
+/plugin install cli-for-agent@newwwbe
 ```
 
 ## Usage

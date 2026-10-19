@@ -6,7 +6,7 @@ Claude Code port of the [Grok Voice](../../grok-voice/) Cursor plugin: four skil
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install grok-voice@cursor-plugins
+/plugin install grok-voice@newwwbe
 ```
 
 ## Usage

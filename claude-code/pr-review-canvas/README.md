@@ -6,7 +6,7 @@ Claude Code port of the [PR Review Canvas](../../pr-review-canvas/) Cursor plugi
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install pr-review-canvas@cursor-plugins
+/plugin install pr-review-canvas@newwwbe
 ```
 
 ## Usage

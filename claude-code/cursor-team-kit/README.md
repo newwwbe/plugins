@@ -6,7 +6,7 @@ Claude Code port of the [Cursor Team Kit](../../cursor-team-kit/) plugin: intern
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install cursor-team-kit@cursor-plugins
+/plugin install cursor-team-kit@newwwbe
 ```
 
 ## Usage

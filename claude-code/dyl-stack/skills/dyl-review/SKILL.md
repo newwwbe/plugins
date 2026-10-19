@@ -15,7 +15,7 @@ Produce a draft PR review the human can paste. This is the one review: thermos a
 
 Input: one or more PR links or numbers. Multiple PRs get one review block each.
 
-**Requires** `pstack`, plus `thermos` at deep depth. Check first with [../dyl-mode/references/requirements.md](../dyl-mode/references/requirements.md). Missing → stop and tell the user to run `/plugin install <name>@cursor-plugins`.
+**Requires** `pstack`, plus `thermos` at deep depth. Check first with [../dyl-mode/references/requirements.md](../dyl-mode/references/requirements.md). Missing → stop and tell the user to run `/plugin install <name>@newwwbe`.
 
 **Forge.** Use `origin pr` when the repo lives on Origin, `gh pr` otherwise. Commands below show both.
 

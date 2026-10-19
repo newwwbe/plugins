@@ -6,7 +6,7 @@ Claude Code port of the [Ralph Loop](../../ralph-loop/) Cursor plugin. It runs C
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install ralph-loop@cursor-plugins
+/plugin install ralph-loop@newwwbe
 ```
 
 The hook needs `bash`, `jq`, and `perl` on your `PATH`.

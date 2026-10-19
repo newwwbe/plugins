@@ -8,7 +8,7 @@ Claude Code port of the [Cursor SDK](../../cursor-sdk/) Cursor plugin: one knowl
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install cursor-sdk@cursor-plugins
+/plugin install cursor-sdk@newwwbe
 ```
 
 ## Usage

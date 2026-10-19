@@ -6,7 +6,7 @@ Claude Code port of the [Teaching](../../teaching/) Cursor plugin: skill mapping
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install teaching@cursor-plugins
+/plugin install teaching@newwwbe
 ```
 
 ## Usage

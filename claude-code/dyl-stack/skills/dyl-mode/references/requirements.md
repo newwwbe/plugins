@@ -1,6 +1,6 @@
 # Requirements
 
-dyl-stack layers on other plugins. Check the ones your skill needs before any work. If one is missing, stop, name it, and tell the user to run `/plugin install <name>@cursor-plugins`. Do not improvise the missing piece.
+dyl-stack layers on other plugins. Check the ones your skill needs before any work. If one is missing, stop, name it, and tell the user to run `/plugin install <name>@newwwbe`. Do not improvise the missing piece.
 
 | Plugin | Installed when | Reach its files |
 |---|---|---|

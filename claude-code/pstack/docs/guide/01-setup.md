@@ -8,7 +8,7 @@ In Claude Code, run:
 
 ```text
 /plugin marketplace add newwwbe/plugins
-/plugin install pstack@cursor-plugins
+/plugin install pstack@newwwbe
 ```
 
 Claude Code confirms the plugin is installed. Plugin skills are namespaced, so every `/name` in this guide is typed as `/pstack:name`, for example `/pstack:poteto-mode`.

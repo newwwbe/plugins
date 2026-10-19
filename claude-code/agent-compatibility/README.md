@@ -8,7 +8,7 @@ By default, the full pass returns one overall score and one short list of the hi
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install agent-compatibility@cursor-plugins
+/plugin install agent-compatibility@newwwbe
 ```
 
 ## Usage

@@ -8,7 +8,7 @@ The skill lives in [`skills/orchestrate/SKILL.md`](./skills/orchestrate/SKILL.md
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install orchestrate@cursor-plugins
+/plugin install orchestrate@newwwbe
 ```
 
 Prerequisites: `git`, `python3` (stdlib only, no install step), and the `claude` CLI on PATH. Run it inside a git repository with at least one commit.

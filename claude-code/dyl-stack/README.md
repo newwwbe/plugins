@@ -6,10 +6,10 @@ Claude Code port of the [dyl-stack](../../dyl-stack/) Cursor plugin: Dylan's age
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install pstack@cursor-plugins
-/plugin install cursor-team-kit@cursor-plugins
-/plugin install thermos@cursor-plugins
-/plugin install dyl-stack@cursor-plugins
+/plugin install pstack@newwwbe
+/plugin install cursor-team-kit@newwwbe
+/plugin install thermos@newwwbe
+/plugin install dyl-stack@newwwbe
 ```
 
 `/dyl-stack:build-figma` also needs a Figma MCP server connected (for example Figma's Dev Mode MCP server via `claude mcp add`). A Figma plugin that ships a `figma-design-to-code` skill is used when present.
@@ -46,7 +46,7 @@ Claude Code port of the [dyl-stack](../../dyl-stack/) Cursor plugin: Dylan's age
 - **Reaching pstack.** pstack's skills are slash-only and hidden from the Skill tool, so `references/requirements.md` gives a `find ~/.claude/plugins ...` lookup for `poteto-mode/SKILL.md` and the skills Read pstack files from disk. Slash names are `/pstack:<skill>`; the pstack agent is `pstack:poteto-agent`.
 - **Bugbot.** Cursor's built-in `/review-bugbot` subagent has no Claude Code equivalent. Deep `dyl-review` runs a `general-purpose` bug-only pass in its place and reads the Bugbot GitHub app's PR comments when the repo uses it. `dyl-ready-pr` still waits for the Bugbot GitHub check when the repo runs it.
 - Thermos agents are referenced as `thermos:thermo-nuclear-review-subagent` / `thermos:thermo-nuclear-code-quality-review-subagent`; cursor-team-kit skills as `cursor-team-kit:<name>`.
-- Repo-guidance lookups include `CLAUDE.md`, `.claude/rules/`, and `.claude/skills/` alongside `AGENTS.md` and legacy `.cursor/` paths. Missing-plugin messages point at `/plugin install <name>@cursor-plugins` instead of `/add-plugin`.
+- Repo-guidance lookups include `CLAUDE.md`, `.claude/rules/`, and `.claude/skills/` alongside `AGENTS.md` and legacy `.cursor/` paths. Missing-plugin messages point at `/plugin install <name>@newwwbe` instead of `/add-plugin`.
 - `/loop` ticks map to Claude Code's `/loop` (or a Monitor / scheduled check-in).
 - Skill bodies are otherwise unchanged from upstream.
 

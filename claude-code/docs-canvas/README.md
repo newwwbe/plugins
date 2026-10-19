@@ -6,7 +6,7 @@ Claude Code port of the [Docs Canvas](../../docs-canvas/) Cursor plugin: render 
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install docs-canvas@cursor-plugins
+/plugin install docs-canvas@newwwbe
 ```
 
 ## Usage

@@ -12,7 +12,7 @@ disable-model-invocation: true
 
 Strict sequence to get **one** PR merge-ready.
 
-**Requires** `pstack`, `cursor-team-kit`, and `thermos`. Check first with [../dyl-mode/references/requirements.md](../dyl-mode/references/requirements.md). Missing → stop and tell the user to run `/plugin install <name>@cursor-plugins`.
+**Requires** `pstack`, `cursor-team-kit`, and `thermos`. Check first with [../dyl-mode/references/requirements.md](../dyl-mode/references/requirements.md). Missing → stop and tell the user to run `/plugin install <name>@newwwbe`.
 
 Trigger phrases that **must** run this skill (not plain Babysit): "get PR green", "get it green", "make the PR mergeable", "ready the PR", `/dyl-stack:dyl-ready-pr`, "`/dyl-review` till green, then `/dyl-ready-pr`".
 

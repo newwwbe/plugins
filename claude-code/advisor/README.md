@@ -8,7 +8,7 @@ The default advisor is `opus`. Because the advisor is a subagent with its own mo
 
 ```
 /plugin marketplace add newwwbe/plugins
-/plugin install advisor@cursor-plugins
+/plugin install advisor@newwwbe
 ```
 
 The hooks and the state script need `bash` and `jq` on your `PATH`.

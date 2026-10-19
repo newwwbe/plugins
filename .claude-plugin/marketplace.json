@@ -1,10 +1,31 @@
 {
-  "name": "cursor-plugins",
+  "name": "newwwbe",
   "owner": {
-    "name": "Cursor",
-    "email": "plugins@cursor.com"
+    "name": "newwwbe",
+    "url": "https://github.com/newwwbe"
   },
   "plugins": [
+    {
+      "name": "attention-span",
+      "source": {
+        "source": "github",
+        "repo": "newwwbe/attention-span"
+      },
+      "description": "Answer-first output styles (Attention-kind, Spartan, Rundown), the /style switcher, and /tldr."
+    },
+    {
+      "name": "anti-slop",
+      "source": {
+        "source": "github",
+        "repo": "newwwbe/anti-slop"
+      },
+      "strict": false,
+      "description": "install-anti-slop skill: vendors the anti-slop Oxlint rules into a TypeScript/JavaScript repo and configures them.",
+      "license": "MIT",
+      "skills": [
+        "./skills/install-anti-slop"
+      ]
+    },
     {
       "name": "origin-apps",
       "source": "./origin-apps",
@@ -512,6 +533,6 @@
     }
   ],
   "metadata": {
-    "description": "Claude Code port of the Cursor plugin marketplace (cursor/plugins): developer workflows, review tools, and MCP integrations."
+    "description": "Personal Claude Code marketplace: anti-slop, attention-span, and Claude Code ports of the Cursor plugin catalog."
   }
 }
