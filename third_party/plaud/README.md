@@ -60,3 +60,9 @@ Logo is Plaud's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install plaud --marketplace newwwbe/plugins
+```

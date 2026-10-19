@@ -61,3 +61,9 @@ Logo is Ahrefs's official mark, from the `ahrefs` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install ahrefs --marketplace newwwbe/plugins
+```

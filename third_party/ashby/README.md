@@ -49,3 +49,9 @@ Logo is Ashby's official app icon (white serif A on the brand blue tile) from ht
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install ashby --marketplace newwwbe/plugins
+```

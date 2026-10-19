@@ -60,3 +60,9 @@ Logo is Typeform's official mark, from the `Typeform` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install typeform --marketplace newwwbe/plugins
+```

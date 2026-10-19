@@ -58,3 +58,9 @@ Logo is Webull's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install webull --marketplace newwwbe/plugins
+```

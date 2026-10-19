@@ -66,3 +66,9 @@ Logo is beehiiv's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install beehiiv --marketplace newwwbe/plugins
+```

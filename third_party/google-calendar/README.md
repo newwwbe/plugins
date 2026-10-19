@@ -38,3 +38,9 @@ https://www.gstatic.com/images/branding/productlogos/calendar_2026/v1/192px.svg
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install google-calendar --marketplace newwwbe/plugins
+```

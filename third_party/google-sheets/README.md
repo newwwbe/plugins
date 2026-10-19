@@ -41,3 +41,9 @@ Logo is the official Google Sheets product icon, placed on a white tile with pad
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install google-sheets --marketplace newwwbe/plugins
+```

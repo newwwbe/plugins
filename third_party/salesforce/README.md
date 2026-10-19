@@ -93,3 +93,11 @@ On a team marketplace an admin sets both values once. Each member still authenti
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install salesforce --marketplace newwwbe/plugins
+```
+
+This plugin needs `SALESFORCE_MCP_URL`, `CLIENT_ID`. Set them with `claude plugin configure salesforce`.

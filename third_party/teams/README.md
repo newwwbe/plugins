@@ -38,3 +38,9 @@ https://res-1.cdn.office.net/files/fabric-cdn-prod_20240411.001/assets/brand-ico
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install teams --marketplace newwwbe/plugins
+```

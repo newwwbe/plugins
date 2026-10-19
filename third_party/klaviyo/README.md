@@ -63,3 +63,9 @@ Logo is Klaviyo's official mark, from the `klaviyo` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install klaviyo --marketplace newwwbe/plugins
+```

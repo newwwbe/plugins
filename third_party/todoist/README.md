@@ -55,3 +55,9 @@ Logo is Todoist's official mark, from https://todoist.com.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install todoist --marketplace newwwbe/plugins
+```

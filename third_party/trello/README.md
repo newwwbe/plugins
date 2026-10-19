@@ -67,3 +67,9 @@ Logo is Trello's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install trello --marketplace newwwbe/plugins
+```

@@ -58,3 +58,9 @@ Logo is Fireflies's official mark, from the `firefliesai` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install fireflies --marketplace newwwbe/plugins
+```

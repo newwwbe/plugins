@@ -66,3 +66,9 @@ Logo is Amplemarket's official app icon (white A on black) from https://brand.am
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install amplemarket --marketplace newwwbe/plugins
+```

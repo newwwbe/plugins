@@ -66,3 +66,11 @@ Logo is Brevo's official mark, from the `getbrevo` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install brevo --marketplace newwwbe/plugins
+```
+
+This plugin needs `BREVO_MCP_TOKEN`. Set them with `claude plugin configure brevo`.

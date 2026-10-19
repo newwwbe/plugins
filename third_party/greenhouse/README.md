@@ -54,3 +54,9 @@ Logo is Greenhouse's official app icon (white "g" on the brand green tile) from 
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install greenhouse --marketplace newwwbe/plugins
+```

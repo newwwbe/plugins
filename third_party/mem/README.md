@@ -55,3 +55,9 @@ Logo is Mem's official mark, from the `mem-labs` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install mem --marketplace newwwbe/plugins
+```

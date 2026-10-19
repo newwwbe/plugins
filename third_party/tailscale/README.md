@@ -40,3 +40,9 @@ Logo is Tailscale's official mark, from the Tailscale press kit.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install tailscale --marketplace newwwbe/plugins
+```

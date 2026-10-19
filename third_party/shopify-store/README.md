@@ -43,3 +43,9 @@ Third-party connectors are not built or maintained by xAI. Use caution when gran
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install shopify-store --marketplace newwwbe/plugins
+```

@@ -38,3 +38,9 @@ https://www.gstatic.com/images/branding/productlogos/gmail_2026/v1/192px.svg
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install gmail --marketplace newwwbe/plugins
+```

@@ -70,3 +70,11 @@ Logo is Hunter's official fox mark, from the `hunter-io` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install hunter --marketplace newwwbe/plugins
+```
+
+This plugin needs `HUNTER_API_KEY`. Set them with `claude plugin configure hunter`.

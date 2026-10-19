@@ -62,3 +62,9 @@ Logo is eToro's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install etoro-trading --marketplace newwwbe/plugins
+```

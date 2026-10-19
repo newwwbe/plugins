@@ -60,3 +60,9 @@ Logo is HighLevel's official arrow mark, taken from the wordmark on gohighlevel.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install highlevel --marketplace newwwbe/plugins
+```

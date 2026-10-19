@@ -59,3 +59,9 @@ Logo is the official BigQuery product icon from Google Cloud's architecture icon
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install google-cloud-bigquery --marketplace newwwbe/plugins
+```

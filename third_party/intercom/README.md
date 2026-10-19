@@ -54,3 +54,9 @@ Logo is Intercom's brand mark (Simple Icons) on a white tile, using Intercom blu
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install intercom --marketplace newwwbe/plugins
+```

@@ -77,3 +77,11 @@ Logo is Xero's official mark, from the `XeroAPI` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install xero --marketplace newwwbe/plugins
+```
+
+This plugin needs `XERO_CLIENT_ID`, `XERO_CLIENT_SECRET`. Set them with `claude plugin configure xero`.

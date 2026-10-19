@@ -52,3 +52,9 @@ Logo is GoDaddy's official mark, from the `godaddy` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install godaddy --marketplace newwwbe/plugins
+```

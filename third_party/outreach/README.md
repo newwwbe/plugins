@@ -68,3 +68,9 @@ Logo is Outreach's official apple-touch icon (purple nucleo on black) from https
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install outreach --marketplace newwwbe/plugins
+```

@@ -37,3 +37,9 @@ Logo is Microsoft's official Outlook Calendar product icon (`OutlookCalendar_24x
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install outlook-calendar --marketplace newwwbe/plugins
+```

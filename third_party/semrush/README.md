@@ -60,3 +60,9 @@ Logo is Semrush's official mark, from the `semrush` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install semrush --marketplace newwwbe/plugins
+```

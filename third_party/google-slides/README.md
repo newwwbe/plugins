@@ -41,3 +41,9 @@ Logo is the official Google Slides product icon, placed on a white tile with pad
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install google-slides --marketplace newwwbe/plugins
+```

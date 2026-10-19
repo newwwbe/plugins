@@ -64,3 +64,9 @@ Logo is Finary's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install finary --marketplace newwwbe/plugins
+```

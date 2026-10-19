@@ -64,3 +64,9 @@ Logo is Robinhood's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install robinhood --marketplace newwwbe/plugins
+```

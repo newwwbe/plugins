@@ -80,3 +80,9 @@ Logo is X Money's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install x-money --marketplace newwwbe/plugins
+```

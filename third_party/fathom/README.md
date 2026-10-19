@@ -59,3 +59,9 @@ Logo is Fathom's official mark, from the `fathom-video` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install fathom --marketplace newwwbe/plugins
+```

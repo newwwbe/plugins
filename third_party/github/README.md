@@ -62,3 +62,11 @@ Logo is GitHub's official Octocat mark, placed on a white tile with padding so i
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install github --marketplace newwwbe/plugins
+```
+
+This plugin needs `GITHUB_PERSONAL_ACCESS_TOKEN`. Set them with `claude plugin configure github`.

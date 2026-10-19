@@ -53,3 +53,9 @@ Logo is Otter.ai's official mark, from the `otter-ai` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install otter --marketplace newwwbe/plugins
+```

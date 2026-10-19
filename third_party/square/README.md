@@ -60,3 +60,9 @@ Logo is Square's official mark, from the `square` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install square --marketplace newwwbe/plugins
+```

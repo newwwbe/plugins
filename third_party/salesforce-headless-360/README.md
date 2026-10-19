@@ -121,3 +121,11 @@ Members then skip setup and go straight to the Salesforce sign-in. The secret is
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install salesforce-headless-360 --marketplace newwwbe/plugins
+```
+
+This plugin needs `SALESFORCE_MCP_URL`, `CLIENT_ID`, `CLIENT_SECRET`. Set them with `claude plugin configure salesforce-headless-360`.

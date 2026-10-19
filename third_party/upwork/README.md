@@ -59,3 +59,9 @@ Logo is Upwork's official mark, from the `upwork` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install upwork --marketplace newwwbe/plugins
+```

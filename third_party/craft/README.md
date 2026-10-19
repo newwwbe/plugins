@@ -61,3 +61,9 @@ Logo is Craft's official mark, from the `craftdocs` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install craft --marketplace newwwbe/plugins
+```

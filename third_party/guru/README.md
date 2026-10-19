@@ -56,3 +56,9 @@ Logo is Guru's official mark, from the `guruhq` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install guru --marketplace newwwbe/plugins
+```

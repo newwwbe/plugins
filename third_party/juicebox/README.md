@@ -60,3 +60,9 @@ Logo is Juicebox's official apple-touch icon (white juice-box isotype on the bra
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install juicebox --marketplace newwwbe/plugins
+```

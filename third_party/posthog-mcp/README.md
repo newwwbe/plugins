@@ -75,3 +75,9 @@ Logo is PostHog's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install posthog-mcp --marketplace newwwbe/plugins
+```

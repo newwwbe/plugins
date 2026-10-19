@@ -42,3 +42,9 @@ Logo is Circleback's official apple-touch icon from https://circleback.ai/apple-
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install circleback --marketplace newwwbe/plugins
+```

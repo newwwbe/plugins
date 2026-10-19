@@ -70,3 +70,9 @@ Logo is Workable's official mark, from the `Workable` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install workable --marketplace newwwbe/plugins
+```

@@ -58,3 +58,9 @@ Logo is S&P Global's official mark (black rule over red block), redrawn at 192×
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install sp-global --marketplace newwwbe/plugins
+```

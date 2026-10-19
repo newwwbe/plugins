@@ -66,3 +66,11 @@ Logo is Smartsheet's official mark, from the `smartsheet` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install smartsheet --marketplace newwwbe/plugins
+```
+
+This plugin needs `SMARTSHEET_API_TOKEN`. Set them with `claude plugin configure smartsheet`.

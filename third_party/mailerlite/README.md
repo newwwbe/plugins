@@ -56,3 +56,9 @@ Logo is MailerLite's official mark, from the `mailerlite` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install mailerlite --marketplace newwwbe/plugins
+```

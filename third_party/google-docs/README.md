@@ -41,3 +41,9 @@ Logo is the official Google Docs product icon, placed on a white tile with paddi
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install google-docs --marketplace newwwbe/plugins
+```

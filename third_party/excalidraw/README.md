@@ -56,3 +56,9 @@ Logo is Excalidraw's official mark, from the `excalidraw` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install excalidraw --marketplace newwwbe/plugins
+```

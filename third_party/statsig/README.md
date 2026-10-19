@@ -69,3 +69,9 @@ Logo is Statsig's official mark, from the `statsig-io` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install statsig --marketplace newwwbe/plugins
+```

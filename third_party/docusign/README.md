@@ -67,3 +67,11 @@ Logo is Docusign's developer-center app icon (192×192) from https://developers.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install docusign --marketplace newwwbe/plugins
+```
+
+This plugin needs `CLIENT_ID`, `CLIENT_SECRET`. Set them with `claude plugin configure docusign`.

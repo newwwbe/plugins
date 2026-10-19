@@ -57,3 +57,9 @@ Logo is Coinbase's official mark, from the `coinbase` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install coinbase --marketplace newwwbe/plugins
+```

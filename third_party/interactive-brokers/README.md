@@ -58,3 +58,9 @@ Logo is Interactive Brokers's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install interactive-brokers --marketplace newwwbe/plugins
+```

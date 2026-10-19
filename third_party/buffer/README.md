@@ -66,3 +66,9 @@ Logo is Buffer's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install buffer --marketplace newwwbe/plugins
+```

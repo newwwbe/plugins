@@ -62,3 +62,11 @@ Logo is Similarweb's official mark, from the `similarweb` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install similarweb --marketplace newwwbe/plugins
+```
+
+This plugin needs `SIMILARWEB_API_KEY`. Set them with `claude plugin configure similarweb`.

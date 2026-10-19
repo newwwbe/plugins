@@ -57,3 +57,9 @@ Your Clay workspace admin may need to allow MCP client connections under Clay wo
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install clay --marketplace newwwbe/plugins
+```

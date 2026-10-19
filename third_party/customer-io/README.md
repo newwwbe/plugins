@@ -63,3 +63,9 @@ Logo is Customer.io's official mark, from the `customerio` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install customer-io --marketplace newwwbe/plugins
+```

@@ -61,3 +61,9 @@ Logo is Brex's official mark, from the `brexhq` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install brex --marketplace newwwbe/plugins
+```

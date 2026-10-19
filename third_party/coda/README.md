@@ -63,3 +63,9 @@ Logo is Coda's official mark, from the `coda` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install coda --marketplace newwwbe/plugins
+```

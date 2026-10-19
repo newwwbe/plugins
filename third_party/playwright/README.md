@@ -44,3 +44,9 @@ https://github.com/microsoft/playwright.dev/blob/main/static/img/playwright-logo
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install playwright --marketplace newwwbe/plugins
+```

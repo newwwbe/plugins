@@ -58,3 +58,9 @@ Logo is Gamma's official mark, from the `gamma-app` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install gamma --marketplace newwwbe/plugins
+```

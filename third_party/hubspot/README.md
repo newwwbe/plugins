@@ -63,3 +63,9 @@ Logo is HubSpot's official inverted favicon (white sprocket on the brand orange 
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install hubspot --marketplace newwwbe/plugins
+```

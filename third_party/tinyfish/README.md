@@ -62,3 +62,9 @@ Logo is TinyFish's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install tinyfish --marketplace newwwbe/plugins
+```

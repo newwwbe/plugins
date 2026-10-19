@@ -58,3 +58,9 @@ Logo is Profound's official GitHub organization mark (white isotype on black).
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install profound --marketplace newwwbe/plugins
+```

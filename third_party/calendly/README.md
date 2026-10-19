@@ -58,3 +58,9 @@ Logo is Calendly's official mark, from the `calendly` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install calendly --marketplace newwwbe/plugins
+```

@@ -48,3 +48,11 @@ On a team marketplace an admin sets the client ID and secret once for everyone; 
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install gong --marketplace newwwbe/plugins
+```
+
+This plugin needs `CLIENT_ID`, `CLIENT_SECRET`. Set them with `claude plugin configure gong`.

@@ -66,3 +66,9 @@ Logo is Attio's official mark, from the `attio` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install attio --marketplace newwwbe/plugins
+```

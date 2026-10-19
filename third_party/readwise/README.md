@@ -55,3 +55,9 @@ Logo is Readwise's official mark, from the `readwiseio` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install readwise --marketplace newwwbe/plugins
+```

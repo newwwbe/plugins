@@ -58,3 +58,9 @@ Logo is Meltwater's official mark.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install meltwater --marketplace newwwbe/plugins
+```

@@ -66,3 +66,11 @@ Zoom also exposes SSE variants at the same paths with `/sse` instead of `/stream
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install zoom --marketplace newwwbe/plugins
+```
+
+This plugin needs `CLIENT_ID`, `CLIENT_SECRET`. Set them with `claude plugin configure zoom`.

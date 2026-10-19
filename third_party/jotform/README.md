@@ -59,3 +59,9 @@ Logo is Jotform's official mark, from the `jotform` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install jotform --marketplace newwwbe/plugins
+```

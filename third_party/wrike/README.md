@@ -67,3 +67,11 @@ Logo is Wrike's official mark, from the `wrike` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install wrike --marketplace newwwbe/plugins
+```
+
+This plugin needs `WRIKE_ACCESS_TOKEN`. Set them with `claude plugin configure wrike`.

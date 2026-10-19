@@ -59,3 +59,9 @@ Logo is Daloopa's official mark, from the `daloopa` GitHub organization.
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install daloopa --marketplace newwwbe/plugins
+```

@@ -52,3 +52,9 @@ A correctly connected client returns a structured table within a few seconds. If
 
 - Navan MCP guide: https://developer.navan.com/mcp/
 - Server URL: https://mcp.navan.com/mcp
+
+## Claude Code
+
+```
+/plugin install navan --marketplace newwwbe/plugins
+```

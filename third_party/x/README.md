@@ -100,3 +100,9 @@ Logo is X's official mark from the [X brand toolkit](https://about.x.com/en/who-
 ## License
 
 MIT
+
+## Claude Code
+
+```
+/plugin install x --marketplace newwwbe/plugins
+```
