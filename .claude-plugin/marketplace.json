@@ -37,6 +37,27 @@
       "description": "Thermo-nuclear branch review for Claude Code: deep correctness/security audit and harsh code-quality audit as parallel subagents, synthesized into one verdict."
     },
     {
+      "name": "ponytail",
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      },
+      "description": "Lazy senior dev mode (DietrichGebert/ponytail): reuse existing code, stdlib and platform features before writing new code. /ponytail lite|full|ultra|off, plus ponytail-review (diff) and ponytail-audit (repo)."
+    },
+    {
+      "name": "arena-skill",
+      "source": {
+        "source": "github",
+        "repo": "Jakeschincariol/arena-skill"
+      },
+      "description": "Arena (Jakeschincariol/arena-skill): /arena-skill:arena runs many sub-agents on the same task with different strategy cards and an attack/defend/judge bracket until one answer survives. Expensive; use for hard problems."
+    },
+    {
+      "name": "markitdown",
+      "source": "./claude-code/markitdown",
+      "description": "Microsoft MarkItDown MCP server: convert PDF, Office, HTML, images, audio and URLs to Markdown. Needs uv."
+    },
+    {
       "name": "ahrefs",
       "source": "./integrations/ahrefs",
       "description": "Research keywords, backlinks, rankings, and site health."

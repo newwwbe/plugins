@@ -16,9 +16,30 @@ Windows (PowerShell):
 irm https://raw.githubusercontent.com/newwwbe/plugins/main/install.ps1 | iex
 ```
 
+Everything, including the opt-in extras:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/newwwbe/plugins/main/install.sh | bash -s -- --with "ruflo headroom"
+```
+
 This adds the marketplace, installs the default set at user scope, and sets the default output style to `attention-span:Attention-kind`. Run it again any time; it is safe to repeat and picks up updates.
 
-Default set: `attention-span anti-slop thermos pstack cursor-team-kit dyl-stack advisor ralph-loop orchestrate create-plugin agent-compatibility cli-for-agent teaching docs-canvas pr-review-canvas`
+Default set: `attention-span anti-slop thermos pstack cursor-team-kit dyl-stack advisor ralph-loop orchestrate create-plugin agent-compatibility cli-for-agent teaching docs-canvas pr-review-canvas ponytail arena-skill markitdown`
+
+The script also installs [uv](https://docs.astral.sh/uv/) if it is missing (MarkItDown runs with `uvx`) and the [Graphify](https://github.com/safishamsi/graphify) CLI with its `/graphify` skill. Skip that with `--no-tools`.
+
+Coding tools added on top of the Cursor ports (overview in Korean: [docs/coding-tools.ko.md](docs/coding-tools.ko.md)):
+
+| Tool | How it is installed | Default |
+|:--|:--|:--|
+| [Ponytail](https://github.com/DietrichGebert/ponytail) | `ponytail@newwwbe` (upstream repo) | yes |
+| [Arena](https://github.com/Jakeschincariol/arena-skill) | `arena-skill@newwwbe` (upstream repo), run `/arena-skill:arena` | yes |
+| [MarkItDown](https://github.com/microsoft/markitdown) | `markitdown@newwwbe` (MCP server via `uvx markitdown-mcp`) | yes |
+| [Graphify](https://github.com/safishamsi/graphify) | `uv tool install graphifyy` + `graphify install` | yes |
+| [Ruflo](https://github.com/ruvnet/ruflo) | `--with ruflo`: `ruflo-core` + `ruflo-swarm` from the `ruvnet/ruflo` marketplace | no |
+| [Headroom](https://github.com/headroomlabs-ai/headroom) | `--with headroom`: `headroom-ai` CLI, `headroom init -g claude`, `headroom@headroom-marketplace` | no |
+
+Ruflo adds a 300-tool MCP server and hooks; Headroom routes Claude Code's API traffic through a local compression proxy (undo with `headroom unwrap claude`). Both change how every session runs, so they are opt-in.
 
 Options (bash: `curl ... | bash -s -- <options>`):
 
@@ -26,6 +47,8 @@ Options (bash: `curl ... | bash -s -- <options>`):
 |:--|:--|
 | `--add "github notion"` | Also install these (e.g. MCP integrations; set their keys with `claude plugin configure <name>`) |
 | `--plugins "a b"` | Install exactly these instead of the default set |
+| `--with "ruflo headroom"` | Opt-in extras (see table above) |
+| `--no-tools` | Skip uv and Graphify |
 | `--style NAME` / `--no-style` | Choose or skip the default output style |
 
 Not in the default set: the 84 MCP integrations (each needs its own sign-in), `continual-learning` (edits AGENTS.md automatically), and `cursor-sdk`, `origin-apps`, `grok-voice` (Cursor/xAI-specific).
@@ -43,7 +66,10 @@ Put this in `~/.claude/settings.json` (all machines), or in a repository's `.cla
     "attention-span@newwwbe": true,
     "anti-slop@newwwbe": true,
     "thermos@newwwbe": true,
-    "pstack@newwwbe": true
+    "pstack@newwwbe": true,
+    "ponytail@newwwbe": true,
+    "arena-skill@newwwbe": true,
+    "markitdown@newwwbe": true
   },
   "outputStyle": "attention-span:Attention-kind"
 }

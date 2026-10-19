@@ -1,0 +1,12 @@
+{
+  "name": "markitdown",
+  "version": "0.1.0",
+  "description": "Microsoft MarkItDown as an MCP server: convert PDF, Word, Excel, PowerPoint, HTML, images, audio, ZIP and URLs to Markdown with one tool, convert_to_markdown(uri).",
+  "author": {
+    "name": "newwwbe",
+    "url": "https://github.com/newwwbe"
+  },
+  "homepage": "https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp",
+  "license": "MIT",
+  "keywords": ["markdown", "pdf", "docx", "xlsx", "pptx", "mcp", "conversion"]
+}
