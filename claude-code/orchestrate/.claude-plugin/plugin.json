@@ -1,0 +1,21 @@
+{
+  "name": "orchestrate",
+  "version": "1.1.0-claude.1",
+  "description": "Fan a large task out across parallel Claude Code agents in git worktrees: planners publish tasks, workers and verifiers hand off back up, and a script reconciles the tree from disk and git.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/claude-code/orchestrate",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "orchestrate",
+    "agents",
+    "subagents",
+    "parallel",
+    "worktrees",
+    "planner",
+    "automation"
+  ]
+}

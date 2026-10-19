@@ -499,6 +499,16 @@
       "name": "ralph-loop",
       "source": "./claude-code/ralph-loop",
       "description": "Continuous self-referential AI loops for iterative development in Claude Code, implementing the Ralph Wiggum technique: a Stop hook feeds the same prompt back every turn until the task is complete."
+    },
+    {
+      "name": "orchestrate",
+      "source": "./claude-code/orchestrate",
+      "description": "Fan a large task out across parallel Claude Code agents in git worktrees: planners publish tasks, workers and verifiers hand off back up, and a script reconciles the tree from disk and git."
+    },
+    {
+      "name": "dyl-stack",
+      "source": "./claude-code/dyl-stack",
+      "description": "Dylan's agent style on top of pstack for Claude Code: root causes over symptom patches, The Algorithm before design, terse verified delivery, a PR review that fits in a paste, and Figma-to-UI with a visual judge."
     }
   ],
   "metadata": {

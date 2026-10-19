@@ -1,0 +1,406 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "orchestrate plan.json (Claude Code)",
+  "type": "object",
+  "required": [
+    "goal",
+    "rootSlug",
+    "tasks"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "goal": {
+      "type": "string",
+      "description": "User goal, verbatim at every planner depth."
+    },
+    "summary": {
+      "type": "string",
+      "description": "One-line orientation for the human."
+    },
+    "rootSlug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Kebab-case slug used in branch names orch/<rootSlug>/<task>."
+    },
+    "baseBranch": {
+      "type": "string",
+      "description": "Default startingRef. Defaults to the repo's current branch."
+    },
+    "prBase": {
+      "type": "string",
+      "description": "PR base for openPR workers (defaults to baseBranch)."
+    },
+    "acceptanceCriteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Planner-level acceptance checklist."
+    },
+    "maxParallel": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Concurrent claude -p agents (default 4)."
+    },
+    "taskTimeoutMinutes": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Per-task wall clock before a cap-hit kill (default 90)."
+    },
+    "defaultModels": {
+      "type": "object",
+      "properties": {
+        "worker": {
+          "type": "string"
+        },
+        "verifier": {
+          "type": "string"
+        },
+        "subplanner": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "permissionMode": {
+      "type": "string",
+      "enum": [
+        "default",
+        "acceptEdits",
+        "plan",
+        "bypassPermissions",
+        "auto",
+        "dontAsk"
+      ],
+      "description": "claude -p --permission-mode (default acceptEdits)."
+    },
+    "allowedTools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "claude -p --allowedTools."
+    },
+    "claudeArgs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Extra args appended to every claude -p call."
+    },
+    "andonStatePath": {
+      "type": "string",
+      "description": "Absolute path of a root state.json whose Andon also halts this workspace."
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "required": [
+              "name",
+              "scopedGoal",
+              "type"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$",
+                "description": "Kebab-case ASCII. Used in branch, worktree, and file names."
+              },
+              "scopedGoal": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Outcome for this task; write it as the only steering signal."
+              },
+              "brief": {
+                "type": "string",
+                "description": "Markdown spec inlined into the spawn prompt."
+              },
+              "pathsAllowed": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Glob patterns the task may touch."
+              },
+              "pathsForbidden": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Glob patterns owned by siblings."
+              },
+              "acceptance": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Per-task acceptance checklist."
+              },
+              "verify": {
+                "type": "string",
+                "description": "Optional markdown verification plan."
+              },
+              "startingRef": {
+                "type": "string",
+                "description": "Ref the task's branch is created from. May name another task's planned branch orch/<rootSlug>/<task>."
+              },
+              "dependsOn": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]+$"
+                },
+                "description": "Task names to wait on before spawning; their handoffs are relayed into this task's prompt."
+              },
+              "model": {
+                "type": "string",
+                "description": "Claude model alias or id (opus, sonnet, haiku, or a full claude-* id)."
+              },
+              "maxAttempts": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "Max spawn attempts (default 3)."
+              },
+              "type": {
+                "const": "worker"
+              },
+              "openPR": {
+                "type": "boolean",
+                "description": "Push the branch and open a draft PR against prBase when done."
+              },
+              "measurements": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "name",
+                    "command"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "minLength": 1,
+                      "description": "Matched against the worker's `## Measurements` line prefix verbatim."
+                    },
+                    "command": {
+                      "type": "string",
+                      "minLength": 1,
+                      "description": "Run with `bash -c` in the worker's worktree after handoff."
+                    },
+                    "parser": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "kind": {
+                              "const": "wc-l"
+                            }
+                          },
+                          "required": [
+                            "kind"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "kind": {
+                              "const": "regex"
+                            },
+                            "pattern": {
+                              "type": "string",
+                              "minLength": 1,
+                              "description": "Python regex applied to stdout; group 1 (or the whole match) is the value."
+                            },
+                            "flags": {
+                              "type": "string",
+                              "pattern": "^[ims]*$"
+                            }
+                          },
+                          "required": [
+                            "kind",
+                            "pattern"
+                          ],
+                          "additionalProperties": false
+                        }
+                      ],
+                      "description": "How to extract a value from stdout. Defaults to wc-l (count non-empty lines)."
+                    },
+                    "toleranceFraction": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1,
+                      "description": "Fractional numeric drift tolerated (default 0.10)."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "required": [
+              "name",
+              "scopedGoal",
+              "type"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$",
+                "description": "Kebab-case ASCII. Used in branch, worktree, and file names."
+              },
+              "scopedGoal": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Outcome for this task; write it as the only steering signal."
+              },
+              "brief": {
+                "type": "string",
+                "description": "Markdown spec inlined into the spawn prompt."
+              },
+              "pathsAllowed": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Glob patterns the task may touch."
+              },
+              "pathsForbidden": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Glob patterns owned by siblings."
+              },
+              "acceptance": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Per-task acceptance checklist."
+              },
+              "verify": {
+                "type": "string",
+                "description": "Optional markdown verification plan."
+              },
+              "startingRef": {
+                "type": "string",
+                "description": "Ref the task's branch is created from. May name another task's planned branch orch/<rootSlug>/<task>."
+              },
+              "dependsOn": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]+$"
+                },
+                "description": "Task names to wait on before spawning; their handoffs are relayed into this task's prompt."
+              },
+              "model": {
+                "type": "string",
+                "description": "Claude model alias or id (opus, sonnet, haiku, or a full claude-* id)."
+              },
+              "maxAttempts": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "Max spawn attempts (default 3)."
+              },
+              "type": {
+                "const": "subplanner"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "required": [
+              "name",
+              "scopedGoal",
+              "type",
+              "verifies"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$",
+                "description": "Kebab-case ASCII. Used in branch, worktree, and file names."
+              },
+              "scopedGoal": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Outcome for this task; write it as the only steering signal."
+              },
+              "brief": {
+                "type": "string",
+                "description": "Markdown spec inlined into the spawn prompt."
+              },
+              "pathsAllowed": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Glob patterns the task may touch."
+              },
+              "pathsForbidden": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Glob patterns owned by siblings."
+              },
+              "acceptance": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Per-task acceptance checklist."
+              },
+              "verify": {
+                "type": "string",
+                "description": "Optional markdown verification plan."
+              },
+              "startingRef": {
+                "type": "string",
+                "description": "Ref the task's branch is created from. May name another task's planned branch orch/<rootSlug>/<task>."
+              },
+              "dependsOn": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]+$"
+                },
+                "description": "Task names to wait on before spawning; their handoffs are relayed into this task's prompt."
+              },
+              "model": {
+                "type": "string",
+                "description": "Claude model alias or id (opus, sonnet, haiku, or a full claude-* id)."
+              },
+              "maxAttempts": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "Max spawn attempts (default 3)."
+              },
+              "type": {
+                "const": "verifier"
+              },
+              "verifies": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$",
+                "description": "Target task name."
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

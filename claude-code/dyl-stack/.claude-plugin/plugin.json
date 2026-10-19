@@ -1,0 +1,19 @@
+{
+  "name": "dyl-stack",
+  "version": "0.1.0-claude.1",
+  "description": "Dylan's agent style on top of pstack for Claude Code: root causes over symptom patches, The Algorithm before design, terse verified delivery, a PR review that fits in a paste, and Figma-to-UI with a visual judge.",
+  "author": {
+    "name": "Dylan Gattey"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/claude-code/dyl-stack",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "dyl-stack",
+    "dyl-mode",
+    "pstack",
+    "figma",
+    "code-review",
+    "agent-style"
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "orchestrate state.json (Claude Code; written by orch.py)",
+  "type": "object",
+  "properties": {
+    "updatedAt": {
+      "type": "string"
+    },
+    "andon": {
+      "type": "object",
+      "properties": {
+        "raised": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "raisedAt": {
+          "type": "string"
+        },
+        "clearedAt": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "tasks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "worker",
+              "subplanner",
+              "verifier"
+            ]
+          },
+          "status": {
+            "enum": [
+              "pending",
+              "running",
+              "handed-off",
+              "error",
+              "cancelled",
+              "pruned"
+            ],
+            "description": "pending -> running -> handed-off; error on failure; cancelled by kill; pruned if removed from plan.json."
+          },
+          "attempts": {
+            "type": "integer"
+          },
+          "backend": {
+            "enum": [
+              "cli",
+              "agent"
+            ]
+          },
+          "pid": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "worktree": {
+            "type": "string"
+          },
+          "branch": {
+            "type": "string",
+            "description": "Planned branch orch/<rootSlug>/<task>."
+          },
+          "reportedBranch": {
+            "type": "string",
+            "description": "Branch named in the handoff, when it differs."
+          },
+          "startingRef": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string"
+          },
+          "startedAt": {
+            "type": "string"
+          },
+          "endedAt": {
+            "type": "string"
+          },
+          "sessionId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "costUsd": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "numTurns": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "log": {
+            "type": "string"
+          },
+          "stderr": {
+            "type": "string"
+          },
+          "promptFile": {
+            "type": "string"
+          },
+          "agentHandoffFile": {
+            "type": "string"
+          },
+          "handoffPath": {
+            "type": "string"
+          },
+          "handoffStatus": {
+            "enum": [
+              "success",
+              "partial",
+              "blocked"
+            ]
+          },
+          "verification": {
+            "enum": [
+              "live-ui-verified",
+              "unit-test-verified",
+              "type-check-only",
+              "verifier-blocked",
+              "verifier-failed",
+              "not-verified"
+            ]
+          },
+          "verifiedBy": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "failureMode": {
+            "enum": [
+              "cap-hit",
+              "oom",
+              "network-drop",
+              "tool-error",
+              "unknown",
+              "finished-no-handoff",
+              "max-attempts"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
