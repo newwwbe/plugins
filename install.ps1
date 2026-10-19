@@ -12,7 +12,9 @@ param(
   [string]$Style = "attention-span:Attention-kind",
   [switch]$NoStyle
 )
-$ErrorActionPreference = "Stop"
+# Continue, not Stop: Windows PowerShell 5.1 turns any stderr line from a native command (claude, git, uv)
+# into a terminating error under Stop, so one failed plugin would abort the whole run. Exit codes are checked instead.
+$ErrorActionPreference = "Continue"
 
 $MarketplaceRepo = if ($env:NEWWWBE_MARKETPLACE_REPO) { $env:NEWWWBE_MARKETPLACE_REPO } else { "newwwbe/plugins" }
 $MarketplaceName = "newwwbe"
@@ -24,8 +26,12 @@ if (-not (Get-Command claude -ErrorAction SilentlyContinue)) {
 
 $failed = @()
 function Install-Plugin([string]$Id) {
-  claude plugin install $Id *> $null
-  if ($LASTEXITCODE -eq 0) { Write-Host "    ok  $Id" } else { Write-Host "    !!  $Id (install failed)"; $script:failed += $Id }
+  $out = claude plugin install $Id 2>&1 | Out-String
+  if ($LASTEXITCODE -eq 0) { Write-Host "    ok  $Id" } else {
+    Write-Host "    !!  $Id (install failed)"
+    Write-Host (($out.Trim() -split "`r?`n" | ForEach-Object { "        $_" }) -join "`n")
+    $script:failed += $Id
+  }
 }
 
 # uv runs the MarkItDown MCP server (uvx) and installs the Python CLIs below.
@@ -39,8 +45,9 @@ function Ensure-Uv {
 function Uv-Bin { $d = (uv tool dir --bin 2>$null); if ($d) { $d } else { "$HOME\.local\bin" } }
 
 Write-Host "==> Marketplace: $MarketplaceRepo"
-claude plugin marketplace add $MarketplaceRepo | Out-Null
-claude plugin marketplace update $MarketplaceName | Out-Null
+$out = claude plugin marketplace add $MarketplaceRepo 2>&1 | Out-String
+if ($LASTEXITCODE -ne 0) { Write-Host $out; Write-Host "Could not add the marketplace. Check that git is installed (git --version) and github.com is reachable."; exit 1 }
+claude plugin marketplace update $MarketplaceName *> $null
 
 foreach ($plugin in (($Plugins + " " + $Add) -split "\s+" | Where-Object { $_ })) {
   Install-Plugin "$plugin@$MarketplaceName"

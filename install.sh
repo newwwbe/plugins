@@ -43,10 +43,12 @@ fi
 
 failed=""
 install_plugin() { # plugin@marketplace
-  if claude plugin install "$1" >/dev/null 2>&1; then
+  local out
+  if out="$(claude plugin install "$1" 2>&1)"; then
     echo "    ok  $1"
   else
     echo "    !!  $1 (install failed)"
+    printf '%s\n' "$out" | sed 's/^/        /'
     failed="$failed $1"
   fi
 }
