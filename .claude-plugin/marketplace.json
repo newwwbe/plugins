@@ -479,6 +479,11 @@
       "name": "teaching",
       "source": "./claude-code/teaching",
       "description": "Skill mapping, practice plans, and learning retrospectives. Builds personalized roadmaps with milestones and practice checkpoints, and runs periodic reviews to adjust based on progress."
+    },
+    {
+      "name": "pstack",
+      "source": "./claude-code/pstack",
+      "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code: rigorous agent workflows, playbooks, and principles you can parallelize with confidence, ported to Claude Code."
     }
   ],
   "metadata": {
