@@ -1,0 +1,21 @@
+{
+  "name": "ralph-loop",
+  "version": "1.0.0-claude.1",
+  "description": "Continuous self-referential AI loops for iterative development in Claude Code, implementing the Ralph Wiggum technique: a Stop hook feeds the same prompt back every turn until the task is complete.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/claude-code/ralph-loop",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "ralph",
+    "loop",
+    "iteration",
+    "self-referential",
+    "automation",
+    "iterative-development",
+    "hooks"
+  ]
+}

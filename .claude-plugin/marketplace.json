@@ -484,6 +484,21 @@
       "name": "pstack",
       "source": "./claude-code/pstack",
       "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code: rigorous agent workflows, playbooks, and principles you can parallelize with confidence, ported to Claude Code."
+    },
+    {
+      "name": "advisor",
+      "source": "./claude-code/advisor",
+      "description": "Consult a stronger model at key checkpoints: before major decisions, when stuck on an error, and before declaring a task done. A read-only Opus advisor subagent gets a full briefing plus the conversation transcript, returns guidance, and the main model keeps doing the work."
+    },
+    {
+      "name": "continual-learning",
+      "source": "./claude-code/continual-learning",
+      "description": "Incrementally learns durable user preferences and workspace facts from Claude Code transcript changes and keeps AGENTS.md up to date with plain bullet points."
+    },
+    {
+      "name": "ralph-loop",
+      "source": "./claude-code/ralph-loop",
+      "description": "Continuous self-referential AI loops for iterative development in Claude Code, implementing the Ralph Wiggum technique: a Stop hook feeds the same prompt back every turn until the task is complete."
     }
   ],
   "metadata": {
