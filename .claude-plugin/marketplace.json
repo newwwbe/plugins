@@ -454,6 +454,31 @@
       "name": "grok-voice",
       "source": "./claude-code/grok-voice",
       "description": "Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions."
+    },
+    {
+      "name": "cursor-team-kit",
+      "source": "./claude-code/cursor-team-kit",
+      "description": "Internal engineering team workflows for CI, code review, shipping, control-cli, control-ui, verify-this, test reliability, code cleanup, and work summaries. Designed to work without requiring third-party service integrations."
+    },
+    {
+      "name": "create-plugin",
+      "source": "./claude-code/create-plugin",
+      "description": "Scaffold and validate new Claude Code plugins. Handles directory setup, manifest generation, marketplace wiring, and pre-submission quality checks with claude plugin validate."
+    },
+    {
+      "name": "agent-compatibility",
+      "source": "./claude-code/agent-compatibility",
+      "description": "CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality."
+    },
+    {
+      "name": "cli-for-agent",
+      "source": "./claude-code/cli-for-agent",
+      "description": "Patterns for designing CLIs that coding agents can run reliably: non-interactive flags, layered help with examples, pipelines, actionable errors, idempotency, and dry-run."
+    },
+    {
+      "name": "teaching",
+      "source": "./claude-code/teaching",
+      "description": "Skill mapping, practice plans, and learning retrospectives. Builds personalized roadmaps with milestones and practice checkpoints, and runs periodic reviews to adjust based on progress."
     }
   ],
   "metadata": {

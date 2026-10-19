@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "awk 'FNR==1{f=0} f>=2{print} /^---$/{f++}' \"${CLAUDE_PLUGIN_ROOT}/rules/no-inline-imports.mdc\" \"${CLAUDE_PLUGIN_ROOT}/rules/typescript-exhaustive-switch.mdc\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

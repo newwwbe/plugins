@@ -1,0 +1,16 @@
+---
+description: Keep Claude Code plugin manifests, paths, and component metadata valid during plugin authoring.
+alwaysApply: true
+---
+
+# Plugin quality gates
+
+When creating or editing Claude Code plugins:
+
+1. Ensure `.claude-plugin/plugin.json` exists and includes a valid kebab-case `name`. Only `plugin.json` goes inside `.claude-plugin/`; component folders (`skills/`, `agents/`, `commands/`, `hooks/`) sit at the plugin root.
+2. Keep paths relative to the plugin root and starting with `./` (no absolute paths, no `..` traversal). Reference bundled files from hooks, agents, and skills with `${CLAUDE_PLUGIN_ROOT}`.
+3. Match declared component paths to real files and folders.
+4. Include YAML frontmatter for skills (`name`, `description`), agents (`name`, `description`), and commands (`description`) with required metadata.
+5. Keep plugin scope focused and document installation and usage in `README.md`.
+6. Run `claude plugin validate <plugin-dir>` after every structural change, and fix all errors before calling the work done.
+7. Save new plugins to `~/.claude/skills/<plugin-name>/` by default (what `claude plugin init` does), so they auto-load as `<plugin-name>@skills-dir` in the next session or after `/reload-plugins`. Only use a different location when the user explicitly requests it.
