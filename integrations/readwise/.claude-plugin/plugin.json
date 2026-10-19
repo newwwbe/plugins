@@ -1,0 +1,26 @@
+{
+  "name": "readwise",
+  "version": "1.0.0",
+  "description": "Search highlights and Reader documents, save articles.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/readwise",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "readwise",
+    "reader",
+    "highlights",
+    "reading",
+    "notes",
+    "mcp"
+  ],
+  "mcpServers": {
+    "readwise": {
+      "type": "http",
+      "url": "https://mcp2.readwise.io/mcp"
+    }
+  }
+}

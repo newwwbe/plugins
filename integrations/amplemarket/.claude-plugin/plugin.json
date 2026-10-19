@@ -1,0 +1,27 @@
+{
+  "name": "amplemarket",
+  "version": "1.0.0",
+  "description": "Search people and companies, enrich leads, run sequences.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/amplemarket",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "amplemarket",
+    "sales",
+    "prospecting",
+    "enrichment",
+    "sequences",
+    "leads",
+    "mcp"
+  ],
+  "mcpServers": {
+    "amplemarket": {
+      "type": "http",
+      "url": "https://mcp.amplemarket.com/mcp"
+    }
+  }
+}

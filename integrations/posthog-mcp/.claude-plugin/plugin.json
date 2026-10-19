@@ -1,0 +1,30 @@
+{
+  "name": "posthog-mcp",
+  "version": "1.0.1",
+  "description": "Work with PostHog from chat: query product analytics and run SQL, manage feature flags and experiments, triage error tracking issues, and review session replays, surveys, and dashboards (URL-only connector to PostHog's hosted MCP server).",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/posthog-mcp",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "posthog",
+    "product analytics",
+    "feature flags",
+    "experiments",
+    "error tracking",
+    "session replay",
+    "hogql",
+    "sql",
+    "mcp"
+  ],
+  "mcpServers": {
+    "posthog": {
+      "type": "http",
+      "url": "https://mcp.posthog.com/mcp",
+      "placement": "server"
+    }
+  }
+}

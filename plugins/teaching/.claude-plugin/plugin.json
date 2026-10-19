@@ -1,0 +1,19 @@
+{
+  "name": "teaching",
+  "version": "1.0.0-claude.1",
+  "description": "Skill mapping, practice plans, and learning retrospectives. Builds personalized roadmaps with milestones and practice checkpoints, and runs periodic reviews to adjust based on progress.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/plugins/teaching",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "teaching",
+    "study-plan",
+    "practice",
+    "feedback",
+    "mentorship"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "otter",
+  "version": "1.0.0",
+  "description": "Search meeting history and pull full transcripts.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/otter",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "otter",
+    "otter.ai",
+    "meetings",
+    "transcripts",
+    "notes",
+    "mcp"
+  ],
+  "mcpServers": {
+    "otter": {
+      "type": "http",
+      "url": "https://mcp.otter.ai/mcp"
+    }
+  }
+}

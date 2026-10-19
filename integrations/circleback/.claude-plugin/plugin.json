@@ -1,0 +1,26 @@
+{
+  "name": "circleback",
+  "version": "1.0.0",
+  "description": "Search meetings, transcripts, action items, and emails.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/circleback",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "circleback",
+    "meetings",
+    "transcripts",
+    "notes",
+    "calendar",
+    "mcp"
+  ],
+  "mcpServers": {
+    "circleback": {
+      "type": "http",
+      "url": "https://circleback.ai/api/mcp"
+    }
+  }
+}

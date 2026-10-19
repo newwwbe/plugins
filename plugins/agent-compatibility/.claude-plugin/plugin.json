@@ -1,0 +1,20 @@
+{
+  "name": "agent-compatibility",
+  "version": "1.0.0-claude.1",
+  "description": "CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/plugins/agent-compatibility",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "agent-compatibility",
+    "agents",
+    "compatibility",
+    "repo-audit",
+    "startup",
+    "validation"
+  ]
+}

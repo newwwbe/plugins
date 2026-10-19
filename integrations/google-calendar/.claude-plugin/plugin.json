@@ -1,0 +1,26 @@
+{
+  "name": "google-calendar",
+  "version": "1.0.0",
+  "description": "Search events and schedule meetings.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/google-calendar",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "google-calendar",
+    "calendar",
+    "google",
+    "mcp",
+    "events",
+    "workspace"
+  ],
+  "mcpServers": {
+    "google-calendar": {
+      "type": "http",
+      "url": "https://calendarmcp.googleapis.com/mcp/v1"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "fireflies",
+  "version": "1.0.0",
+  "description": "Search meeting transcripts, summaries, and action items.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/fireflies",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "fireflies",
+    "meetings",
+    "transcripts",
+    "notes",
+    "action-items",
+    "mcp"
+  ],
+  "mcpServers": {
+    "fireflies": {
+      "type": "http",
+      "url": "https://api.fireflies.ai/mcp"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "ahrefs",
+  "version": "1.0.0",
+  "description": "Research keywords, backlinks, rankings, and site health.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/ahrefs",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "ahrefs",
+    "seo",
+    "backlinks",
+    "keywords",
+    "rank-tracking",
+    "site-audit",
+    "mcp"
+  ],
+  "mcpServers": {
+    "ahrefs": {
+      "type": "http",
+      "url": "https://api.ahrefs.com/mcp/mcp"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "daloopa",
+  "version": "1.0.0",
+  "description": "Pull source-linked fundamentals, KPIs, filings, and prices.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/daloopa",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "daloopa",
+    "fundamentals",
+    "kpis",
+    "sec filings",
+    "transcripts",
+    "equity research",
+    "financial data",
+    "mcp"
+  ],
+  "mcpServers": {
+    "daloopa": {
+      "type": "http",
+      "url": "https://mcp.daloopa.com/server/mcp"
+    }
+  }
+}

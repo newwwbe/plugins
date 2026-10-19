@@ -1,0 +1,28 @@
+{
+  "name": "statsig",
+  "version": "2.0.0",
+  "description": "Inspect and manage feature gates, experiments, dynamic configs, and metrics.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/statsig",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "statsig",
+    "feature flags",
+    "feature gates",
+    "experiments",
+    "a/b testing",
+    "dynamic configs",
+    "metrics",
+    "mcp"
+  ],
+  "mcpServers": {
+    "statsig": {
+      "type": "http",
+      "url": "https://api.statsig.com/v3/mcp"
+    }
+  }
+}

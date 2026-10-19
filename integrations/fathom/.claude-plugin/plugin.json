@@ -1,0 +1,26 @@
+{
+  "name": "fathom",
+  "version": "1.0.0",
+  "description": "Search meetings and pull transcripts and summaries.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/fathom",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "fathom",
+    "meetings",
+    "transcripts",
+    "summaries",
+    "notes",
+    "mcp"
+  ],
+  "mcpServers": {
+    "fathom": {
+      "type": "http",
+      "url": "https://api.fathom.ai/mcp"
+    }
+  }
+}

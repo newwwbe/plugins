@@ -1,0 +1,27 @@
+{
+  "name": "hubspot",
+  "version": "1.0.1",
+  "description": "Search and update contacts, companies, deals, and tickets.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/hubspot",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "hubspot",
+    "crm",
+    "mcp",
+    "sales",
+    "marketing",
+    "contacts",
+    "deals"
+  ],
+  "mcpServers": {
+    "hubspot": {
+      "type": "http",
+      "url": "https://mcp.hubspot.com"
+    }
+  }
+}

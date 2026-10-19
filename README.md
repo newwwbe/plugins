@@ -1,6 +1,6 @@
 # newwwbe Claude Code plugins
 
-This fork is a Claude Code marketplace (`newwwbe`). It bundles [anti-slop](https://github.com/newwwbe/anti-slop), [attention-span](https://github.com/newwwbe/attention-span), and Claude Code ports of the Cursor plugins below (`claude-code/` and `third_party/*/.claude-plugin/`). The Cursor files are unchanged.
+A Claude Code plugin marketplace (`newwwbe`). It bundles [anti-slop](https://github.com/newwwbe/anti-slop), [attention-span](https://github.com/newwwbe/attention-span), and Claude Code ports of the [Cursor plugin catalog](https://github.com/cursor/plugins): workflow plugins in `plugins/` and MCP integrations in `integrations/`. Only Claude Code files are kept here.
 
 ## Set up any machine in one line
 
@@ -55,132 +55,47 @@ Or inside Claude Code: `/plugin marketplace add newwwbe/plugins`, then `/plugin 
 
 Cloud sessions start from a fresh container, so add the one-line installer to the environment's **Setup script** (environment menu in the session title bar → Edit), or commit the settings block above to the repository's `.claude/settings.json`.
 
----
-
-# Cursor plugins
-
-Official Cursor plugins for popular developer tools, frameworks, and SaaS products. Each plugin is a standalone directory at the repository root with its own `.cursor-plugin/plugin.json` manifest.
-
 ## Plugins
 
-| `name` | Plugin | Author | Category | `description` (from marketplace) |
-|:-------|:-------|:-------|:---------|:-------------------------------------|
-| `teaching` | [Teaching](teaching/) | Cursor | Utilities | Skill mapping, practice plans, and learning retrospectives. |
-| `continual-learning` | [Continual Learning](continual-learning/) | Eric Zakariasson | Developer Tools | Incremental transcript-driven memory updates for AGENTS.md using high-signal bullet points only. |
-| `cursor-team-kit` | [Cursor Team Kit](cursor-team-kit/) | Eric Zakariasson | Developer Tools | Internal team workflows for CI, code review, shipping, local automation, and verification. |
-| `thermos` | [Thermos](thermos/) | Cursor | Developer Tools | Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows. |
-| `create-plugin` | [Create Plugin](create-plugin/) | Cursor | Developer Tools | Scaffold and validate new agent plugins. |
-| `ralph-loop` | [Ralph Loop](ralph-loop/) | Cursor | Developer Tools | Iterative self-referential AI loops using the Ralph Wiggum technique. |
-| `agent-compatibility` | [Agent Compatibility](agent-compatibility/) | Cursor | Developer Tools | CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality. |
-| `cli-for-agent` | [CLI for Agents](cli-for-agent/) | Eric Zakariasson | Developer Tools | Patterns for designing CLIs that coding agents can run reliably: flags, help with examples, pipelines, errors, idempotency, dry-run. |
-| `pr-review-canvas` | [PR Review Canvas](pr-review-canvas/) | Cursor | Developer Tools | Render PR diffs as review canvases grouped by importance. |
-| `docs-canvas` | [Docs Canvas](docs-canvas/) | Cursor | Developer Tools | Render documentation as a navigable canvas. |
-| `cursor-sdk` | [Cursor SDK](cursor-sdk/) | Cursor | Developer Tools | Build apps, scripts, and automations with the TypeScript SDK. |
-| `origin-apps` | [Origin Apps](origin-apps/) | Cursor | Developer Tools | Skills for building on the Cursor Origin API. Fetch the live spec first, then follow the Origin rules for credentials, scopes, webhooks, paging, and errors. Includes a skill that plans the port of an existing GitHub App. |
-| `orchestrate` | [Orchestrate](orchestrate/) | Cursor | Developer Tools | Fan large tasks out across parallel cloud agents with planners, workers, verifiers, and structured handoffs. |
-| `pstack` | [pstack](pstack/) | Lauren Tan | Developer Tools | if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence. |
-| `dyl-stack` | [dyl-stack](dyl-stack/) | Dylan Gattey | Developer Tools | Dylan's agent style on top of pstack: root causes over symptom patches, The Algorithm before design, terse verified delivery, a PR review that fits in a paste, and Figma-to-UI with a visual judge. |
-| `advisor` | [Advisor](advisor/) | Cursor | Developer Tools | Consult a stronger model before major decisions, when stuck, and before declaring done. |
-| `grok-voice` | [Grok Voice](grok-voice/) | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions. |
-| `gmail` | [Gmail](third_party/gmail/) | Cursor | Productivity | Search, read, draft, and manage email. |
-| `google-drive` | [Google Drive](third_party/google-drive/) | Cursor | Productivity | Search, read, create, and share files. |
-| `google-calendar` | [Google Calendar](third_party/google-calendar/) | Cursor | Productivity | Search events and schedule meetings. |
-| `google-docs` | [Google Docs](third_party/google-docs/) | Cursor | Productivity | Read, create, and edit documents. |
-| `google-sheets` | [Google Sheets](third_party/google-sheets/) | Cursor | Productivity | Read, write, and append spreadsheet data. |
-| `google-slides` | [Google Slides](third_party/google-slides/) | Cursor | Productivity | Create, edit, and render presentations. |
-| `gong` | [Gong](third_party/gong/) | Cursor | Integrations | Pull account summaries, deal insights, and call briefs. |
-| `salesforce` | [Salesforce](third_party/salesforce/) | Cursor | Integrations | Query, create, and update records in your org. |
-| `salesforce-headless-360` | [Salesforce (Headless 360, Beta)](third_party/salesforce-headless-360/) | Cursor | Integrations | Manage records, users, and org setup across Salesforce. |
-| `playwright` | [Playwright](third_party/playwright/) | Cursor | Integrations | Navigate, click, screenshot, and test in a real browser. |
-| `github` | [GitHub](third_party/github/) | Cursor | Integrations | Manage repos, issues, pull requests, and Actions. |
-| `ashby` | [Ashby](third_party/ashby/) | Cursor | Integrations | Search candidates, prep interviews, and manage pipeline tasks. |
-| `hubspot` | [HubSpot](third_party/hubspot/) | Cursor | Integrations | Search and update contacts, companies, deals, and tickets. |
-| `intercom` | [Intercom](third_party/intercom/) | Cursor | Integrations | Search conversations, contacts, and Help Center articles. |
-| `zoom` | [Zoom](third_party/zoom/) | Cursor | Integrations | Search meetings, pull transcripts, and work with Zoom Docs. |
-| `x` | [X](third_party/x/) | Cursor | Integrations | Search posts, read timelines, pull trends, and manage bookmarks. |
-| `clay` | [Clay](third_party/clay/) | Cursor | Integrations | Enrich people and companies, run AI research agents. |
-| `circleback` | [Circleback](third_party/circleback/) | Cursor | Integrations | Search meetings, transcripts, action items, and emails. |
-| `docusign` | [Docusign](third_party/docusign/) | Cursor | Integrations | Manage envelopes, templates, workflows, and agreements. |
-| `navan` | [Navan](third_party/navan/) | Cursor | Integrations | Query expenses, travel bookings, policies, and cards. |
-| `profound` | [Profound](third_party/profound/) | Cursor | Integrations | Track AI visibility, sentiment, and citations. |
-| `juicebox` | [Juicebox](third_party/juicebox/) | Cursor | Integrations | Query recruiting analytics, shortlists, and sourcing agents. |
-| `outreach` | [Outreach](third_party/outreach/) | Cursor | Integrations | Search sequences, prospects, and Kaia meetings. |
-| `amplemarket` | [Amplemarket](third_party/amplemarket/) | Cursor | Integrations | Search people and companies, enrich leads, run sequences. |
-| `klaviyo` | [Klaviyo](third_party/klaviyo/) | Cursor | Integrations | Manage profiles, segments, campaigns, and flows. |
-| `customer-io` | [Customer.io](third_party/customer-io/) | Cursor | Integrations | Build campaigns, manage segments, and query people. |
-| `mailerlite` | [MailerLite](third_party/mailerlite/) | Cursor | Integrations | Manage subscribers, groups, campaigns, and automations. |
-| `brevo` | [Brevo](third_party/brevo/) | Cursor | Integrations | Manage contacts, email and SMS campaigns, and CRM deals. |
-| `typeform` | [Typeform](third_party/typeform/) | Cursor | Integrations | Build forms, analyze responses, and manage contacts. |
-| `jotform` | [Jotform](third_party/jotform/) | Cursor | Integrations | Create and edit forms, then read submissions. |
-| `semrush` | [Semrush](third_party/semrush/) | Cursor | Integrations | Research keywords, backlinks, traffic, and competitors. |
-| `ahrefs` | [Ahrefs](third_party/ahrefs/) | Cursor | Integrations | Research keywords, backlinks, rankings, and site health. |
-| `godaddy` | [GoDaddy](third_party/godaddy/) | Cursor | Integrations | Brainstorm domain names and check availability. |
-| `upwork` | [Upwork](third_party/upwork/) | Cursor | Integrations | Search talent, post jobs, and manage contracts. |
-| `workable` | [Workable](third_party/workable/) | Cursor | Integrations | Search candidates, move pipelines, and manage HR records. |
-| `brex` | [Brex](third_party/brex/) | Cursor | Integrations | Query expenses, receipts, bills, cards, and travel. |
-| `todoist` | [Todoist](third_party/todoist/) | Cursor | Integrations | Create, find, and complete tasks and projects. |
-| `calendly` | [Calendly](third_party/calendly/) | Cursor | Integrations | Check availability and book, cancel, or reschedule. |
-| `smartsheet` | [Smartsheet](third_party/smartsheet/) | Cursor | Integrations | Query and update sheets, rows, and workspaces. |
-| `wrike` | [Wrike](third_party/wrike/) | Cursor | Integrations | Search projects, create tasks, and post comments. |
-| `coda` | [Coda](third_party/coda/) | Cursor | Integrations | Search docs, read pages, and update tables. |
-| `guru` | [Guru](third_party/guru/) | Cursor | Integrations | Search company knowledge and draft verified answers. |
-| `fireflies` | [Fireflies](third_party/fireflies/) | Cursor | Integrations | Search meeting transcripts, summaries, and action items. |
-| `otter` | [Otter.ai](third_party/otter/) | Cursor | Integrations | Search meeting history and pull full transcripts. |
-| `fathom` | [Fathom](third_party/fathom/) | Cursor | Integrations | Search meetings and pull transcripts and summaries. |
-| `craft` | [Craft](third_party/craft/) | Cursor | Integrations | Search, create, and update documents and daily notes. |
-| `mem` | [Mem](third_party/mem/) | Cursor | Integrations | Capture, search, and organize notes and collections. |
-| `readwise` | [Readwise](third_party/readwise/) | Cursor | Integrations | Search highlights and Reader documents, save articles. |
-| `similarweb` | [Similarweb](third_party/similarweb/) | Cursor | Integrations | Analyze website traffic, audiences, and competitors. |
-| `xero` | [Xero](third_party/xero/) | Cursor | Integrations | Read and write invoices, contacts, reports, and payroll. |
-| `x-ads` | [X Ads](third_party/x-ads/) | Cursor | Integrations | Manage ad campaigns, create ads, track conversions, and pull performance stats. |
-| `attio` | [Attio](third_party/attio/) | Cursor | Integrations | Search and update CRM records, lists, notes, and tasks. |
-| `hunter` | [Hunter](third_party/hunter/) | Cursor | Integrations | Find and verify emails, discover companies, and save leads. |
-| `gamma` | [Gamma](third_party/gamma/) | Cursor | Integrations | Generate presentations, documents, and webpages. |
-| `teams` | [Teams](third_party/teams/) | Cursor | Productivity | Search, read, and send Microsoft Teams chats and channel messages. |
-| `sharepoint` | [SharePoint](third_party/sharepoint/) | Cursor | Productivity | Search and read Microsoft SharePoint sites, document libraries, files, and lists. |
-| `finance` | [Finance](third_party/finance/) | Cursor | Integrations | Securely connect your accounts so Grok can help with questions about your spending, subscriptions, balances, and investments. |
-| `webull` | [Webull](third_party/webull/) | Cursor | Integrations | View accounts, positions, orders, watchlists, and market data. |
-| `sp-global` | [S&P Global](third_party/sp-global/) | Cursor | Integrations | Query S&P Capital IQ financials, prices, and transcripts. |
-| `interactive-brokers` | [Interactive Brokers](third_party/interactive-brokers/) | Cursor | Integrations | Review positions, balances, P&L, and draft trade instructions. |
-| `meltwater` | [Meltwater](third_party/meltwater/) | Cursor | Integrations | Search media and social mentions and pull analytics. |
-| `daloopa` | [Daloopa](third_party/daloopa/) | Cursor | Integrations | Pull source-linked fundamentals, KPIs, filings, and prices. |
-| `excalidraw` | [Excalidraw](third_party/excalidraw/) | Cursor | Integrations | Draw and export hand-drawn diagrams from chat. |
-| `google-cloud-bigquery` | [Google Cloud BigQuery](third_party/google-cloud-bigquery/) | Cursor | Integrations | Explore datasets and tables and run SQL queries. |
-| `statsig` | [Statsig](third_party/statsig/) | Cursor | Integrations | Inspect and manage feature gates, experiments, dynamic configs, and metrics. |
-| `robinhood` | [Robinhood](third_party/robinhood/) | Cursor | Integrations | View portfolios, positions, orders, watchlists, and market data, and trade in a Robinhood Agentic account. |
-| `coinbase` | [Coinbase](third_party/coinbase/) | Cursor | Integrations | Check balances, get quotes, and preview or place trades. |
-| `etoro-trading` | [eToro Trading](third_party/etoro-trading/) | Cursor | Integrations | View your eToro portfolio, balances, positions, and watchlists, research instruments and traders, and prepare and place trades. |
-| `x-money` | [X Money](third_party/x-money/) | Cursor | Integrations | Use your X Money Card, send money to users on X, manage your finances, view your balance and browse through your transaction history. |
-| `shopify-store` | [Shopify](third_party/shopify-store/) | Cursor | Integrations | Connect your Shopify store so Grok can answer questions about products, orders, customers, inventory, and sales. |
-| `quickbooks-online` | [QuickBooks Online](third_party/quickbooks-online/) | Cursor | Integrations | Read invoices, bills, expenses, customers, accounts, and financial reports. |
-| `workday` | [Workday](third_party/workday/) | Cursor | Integrations | Look up workers, organizations, time off, payroll, and recruiting data in Workday. |
-| `whatsapp-business` | [WhatsApp Business](third_party/whatsapp-business/) | Cursor | Integrations | Send messages and manage templates, contacts, and phone numbers in WhatsApp Business. |
-| `square` | [Square](third_party/square/) | Cursor | Integrations | Work with payments, orders, catalog, customers, and invoices. |
-| `tailscale` | [Tailscale](third_party/tailscale/) | Cursor | Integrations | Let Grok Bot reach MCP servers on your private Tailscale network. Sign in to Tailscale to connect your tailnet; Grok Bot joins it as one tagged device and only reaches the hosts you grant to tag:grokbot. |
-| `highlevel` | [HighLevel](third_party/highlevel/) | Cursor | Integrations | Work with contacts, conversations, opportunities, calendars, and payments. |
-| `finary` | [Finary](third_party/finary/) | Cursor | Integrations | Read your net worth, accounts, holdings, spending, and budgets. |
-Author values match each plugin’s `plugin.json` `author.name` (Cursor lists `plugins@cursor.com` in the manifest).
+| Name | Source | Description |
+|:--|:--|:--|
+| `attention-span` | [github.com/newwwbe/attention-span](https://github.com/newwwbe/attention-span) | Answer-first output styles (Attention-kind, Spartan, Rundown), the /style switcher, and /tldr. |
+| `anti-slop` | [github.com/newwwbe/anti-slop](https://github.com/newwwbe/anti-slop) | install-anti-slop skill: vendors the anti-slop Oxlint rules into a TypeScript/JavaScript repo and configures them. |
+| `origin-apps` | [plugins/origin-apps](plugins/origin-apps/) | Skills for building on the Cursor Origin API. Fetch the live spec first, then follow the Origin rules for credentials, scopes, webhooks, paging, and errors. Includes a skill that plans the port of an existing GitHub App. |
+| `thermos` | [plugins/thermos](plugins/thermos/) | Thermo-nuclear branch review for Claude Code: deep correctness/security audit and harsh code-quality audit as parallel subagents, synthesized into one verdict. |
+| `cursor-sdk` | [plugins/cursor-sdk](plugins/cursor-sdk/) | Knowledge skill for building apps, scripts, CI pipelines, and automations on the Cursor TypeScript SDK (@cursor/sdk), usable from Claude Code. Requires a Cursor account and API key at run time of the code you build. |
+| `docs-canvas` | [plugins/docs-canvas](plugins/docs-canvas/) | Render documentation (architecture notes, API references, runbooks, codebase walkthroughs) as a navigable, self-contained HTML page you open in a browser. |
+| `pr-review-canvas` | [plugins/pr-review-canvas](plugins/pr-review-canvas/) | Render PR diffs as a self-contained HTML review page grouped by reviewer importance, with pseudocode, example traces, and callouts for tricky hunks. |
+| `grok-voice` | [plugins/grok-voice](plugins/grok-voice/) | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions. |
+| `cursor-team-kit` | [plugins/cursor-team-kit](plugins/cursor-team-kit/) | Internal engineering team workflows for CI, code review, shipping, control-cli, control-ui, verify-this, test reliability, code cleanup, and work summaries. Designed to work without requiring third-party service integrations. |
+| `create-plugin` | [plugins/create-plugin](plugins/create-plugin/) | Scaffold and validate new Claude Code plugins. Handles directory setup, manifest generation, marketplace wiring, and pre-submission quality checks with claude plugin validate. |
+| `agent-compatibility` | [plugins/agent-compatibility](plugins/agent-compatibility/) | CLI-backed repo compatibility scans plus agents that audit startup, validation, and docs against reality. |
+| `cli-for-agent` | [plugins/cli-for-agent](plugins/cli-for-agent/) | Patterns for designing CLIs that coding agents can run reliably: non-interactive flags, layered help with examples, pipelines, actionable errors, idempotency, and dry-run. |
+| `teaching` | [plugins/teaching](plugins/teaching/) | Skill mapping, practice plans, and learning retrospectives. Builds personalized roadmaps with milestones and practice checkpoints, and runs periodic reviews to adjust based on progress. |
+| `pstack` | [plugins/pstack](plugins/pstack/) | if you want to go fast, go deep first. pstack helps you write less, but higher quality code: rigorous agent workflows, playbooks, and principles you can parallelize with confidence, ported to Claude Code. |
+| `advisor` | [plugins/advisor](plugins/advisor/) | Consult a stronger model at key checkpoints: before major decisions, when stuck on an error, and before declaring a task done. A read-only Opus advisor subagent gets a full briefing plus the conversation transcript, returns guidance, and the main model keeps doing the work. |
+| `continual-learning` | [plugins/continual-learning](plugins/continual-learning/) | Incrementally learns durable user preferences and workspace facts from Claude Code transcript changes and keeps AGENTS.md up to date with plain bullet points. |
+| `ralph-loop` | [plugins/ralph-loop](plugins/ralph-loop/) | Continuous self-referential AI loops for iterative development in Claude Code, implementing the Ralph Wiggum technique: a Stop hook feeds the same prompt back every turn until the task is complete. |
+| `orchestrate` | [plugins/orchestrate](plugins/orchestrate/) | Fan a large task out across parallel Claude Code agents in git worktrees: planners publish tasks, workers and verifiers hand off back up, and a script reconciles the tree from disk and git. |
+| `dyl-stack` | [plugins/dyl-stack](plugins/dyl-stack/) | Dylan's agent style on top of pstack for Claude Code: root causes over symptom patches, The Algorithm before design, terse verified delivery, a PR review that fits in a paste, and Figma-to-UI with a visual judge. |
+
+## MCP integrations
+
+Install with `/plugin install <name>@newwwbe`; each folder's README lists the sign-in or keys it needs.
+
+[`ahrefs`](integrations/ahrefs/) · [`amplemarket`](integrations/amplemarket/) · [`ashby`](integrations/ashby/) · [`attio`](integrations/attio/) · [`beehiiv`](integrations/beehiiv/) · [`brevo`](integrations/brevo/) · [`brex`](integrations/brex/) · [`buffer`](integrations/buffer/) · [`calendly`](integrations/calendly/) · [`circleback`](integrations/circleback/) · [`clay`](integrations/clay/) · [`coda`](integrations/coda/) · [`coinbase`](integrations/coinbase/) · [`craft`](integrations/craft/) · [`customer-io`](integrations/customer-io/) · [`daloopa`](integrations/daloopa/) · [`docusign`](integrations/docusign/) · [`etoro-trading`](integrations/etoro-trading/) · [`excalidraw`](integrations/excalidraw/) · [`fathom`](integrations/fathom/) · [`finance`](integrations/finance/) · [`finary`](integrations/finary/) · [`fireflies`](integrations/fireflies/) · [`gamma`](integrations/gamma/) · [`github`](integrations/github/) · [`gmail`](integrations/gmail/) · [`godaddy`](integrations/godaddy/) · [`gong`](integrations/gong/) · [`google-calendar`](integrations/google-calendar/) · [`google-cloud-bigquery`](integrations/google-cloud-bigquery/) · [`google-docs`](integrations/google-docs/) · [`google-drive`](integrations/google-drive/) · [`google-sheets`](integrations/google-sheets/) · [`google-slides`](integrations/google-slides/) · [`greenhouse`](integrations/greenhouse/) · [`guru`](integrations/guru/) · [`highlevel`](integrations/highlevel/) · [`hubspot`](integrations/hubspot/) · [`hunter`](integrations/hunter/) · [`interactive-brokers`](integrations/interactive-brokers/) · [`intercom`](integrations/intercom/) · [`jotform`](integrations/jotform/) · [`juicebox`](integrations/juicebox/) · [`klaviyo`](integrations/klaviyo/) · [`mailerlite`](integrations/mailerlite/) · [`meltwater`](integrations/meltwater/) · [`mem`](integrations/mem/) · [`navan`](integrations/navan/) · [`onedrive`](integrations/onedrive/) · [`otter`](integrations/otter/) · [`outlook`](integrations/outlook/) · [`outlook-calendar`](integrations/outlook-calendar/) · [`outreach`](integrations/outreach/) · [`plaud`](integrations/plaud/) · [`playwright`](integrations/playwright/) · [`posthog-mcp`](integrations/posthog-mcp/) · [`profound`](integrations/profound/) · [`readwise`](integrations/readwise/) · [`robinhood`](integrations/robinhood/) · [`salesforce`](integrations/salesforce/) · [`salesforce-headless-360`](integrations/salesforce-headless-360/) · [`semrush`](integrations/semrush/) · [`sharepoint`](integrations/sharepoint/) · [`shopify-store`](integrations/shopify-store/) · [`similarweb`](integrations/similarweb/) · [`smartsheet`](integrations/smartsheet/) · [`sp-global`](integrations/sp-global/) · [`square`](integrations/square/) · [`statsig`](integrations/statsig/) · [`tailscale`](integrations/tailscale/) · [`teams`](integrations/teams/) · [`tinyfish`](integrations/tinyfish/) · [`todoist`](integrations/todoist/) · [`trello`](integrations/trello/) · [`typeform`](integrations/typeform/) · [`upwork`](integrations/upwork/) · [`webull`](integrations/webull/) · [`workable`](integrations/workable/) · [`wrike`](integrations/wrike/) · [`x`](integrations/x/) · [`x-ads`](integrations/x-ads/) · [`x-money`](integrations/x-money/) · [`xero`](integrations/xero/) · [`zoom`](integrations/zoom/)
 
 ## Repository structure
 
-This is a multi-plugin marketplace repository. The root `.cursor-plugin/marketplace.json` lists all plugins, and each plugin has its own manifest:
+```
+.claude-plugin/marketplace.json   # marketplace catalog (name: newwwbe)
+plugins/<name>/                   # workflow plugins: .claude-plugin/plugin.json, skills/, agents/, hooks/
+integrations/<name>/              # MCP integrations: .claude-plugin/plugin.json (+ skills/ or rules/)
+install.sh, install.ps1           # one-line machine setup
+```
 
-```
-plugins/
-├── .cursor-plugin/
-│   └── marketplace.json       # Marketplace manifest (lists all plugins)
-├── plugin-name/
-│   ├── .cursor-plugin/
-│   │   └── plugin.json        # Per-plugin manifest
-│   ├── skills/                # Agent skills (SKILL.md with frontmatter)
-│   ├── rules/                 # Cursor rules (.mdc files)
-│   ├── mcp.json               # MCP server definitions
-│   ├── README.md
-│   ├── CHANGELOG.md
-│   └── LICENSE
-└── ...
-```
+Validate after changes: `claude plugin validate .` (marketplace) and `claude plugin validate plugins/<name>`.
 
 ## License
 
-MIT
+MIT, per plugin (see each `LICENSE`). Ported plugins are adapted from [cursor/plugins](https://github.com/cursor/plugins); anti-slop and attention-span keep their own licenses.

@@ -1,0 +1,42 @@
+{
+  "name": "hunter",
+  "version": "1.0.0",
+  "description": "Find and verify emails, discover companies, and save leads.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/hunter",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "hunter",
+    "email finder",
+    "email verifier",
+    "domain search",
+    "prospecting",
+    "enrichment",
+    "leads",
+    "gtm",
+    "sales",
+    "mcp"
+  ],
+  "mcpServers": {
+    "hunter": {
+      "type": "http",
+      "url": "https://mcp.hunter.io/mcp",
+      "headers": {
+        "X-API-Key": "${user_config.HUNTER_API_KEY}"
+      }
+    }
+  },
+  "userConfig": {
+    "HUNTER_API_KEY": {
+      "type": "string",
+      "title": "Hunter API key",
+      "description": "API key from https://hunter.io/api-keys. The Free plan works.",
+      "required": true,
+      "sensitive": true
+    }
+  }
+}

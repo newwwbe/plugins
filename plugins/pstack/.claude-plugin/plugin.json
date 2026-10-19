@@ -1,0 +1,20 @@
+{
+  "name": "pstack",
+  "version": "0.15.25-claude.1",
+  "description": "if you want to go fast, go deep first. pstack helps you write less, but higher quality code: rigorous agent workflows, playbooks, and principles you can parallelize with confidence, ported to Claude Code.",
+  "author": {
+    "name": "Lauren Tan"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/plugins/pstack",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "pstack",
+    "poteto-mode",
+    "workflow",
+    "principles",
+    "agent-style",
+    "subagents",
+    "unslop"
+  ]
+}

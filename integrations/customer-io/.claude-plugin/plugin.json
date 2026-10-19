@@ -1,0 +1,27 @@
+{
+  "name": "customer-io",
+  "version": "1.0.0",
+  "description": "Build campaigns, manage segments, and query people.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/customer-io",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "customer.io",
+    "customerio",
+    "marketing",
+    "campaigns",
+    "segments",
+    "messaging",
+    "mcp"
+  ],
+  "mcpServers": {
+    "customer-io": {
+      "type": "http",
+      "url": "https://mcp.customer.io/mcp"
+    }
+  }
+}

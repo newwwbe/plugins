@@ -1,0 +1,27 @@
+{
+  "name": "upwork",
+  "version": "1.0.0",
+  "description": "Search talent, post jobs, and manage contracts.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/upwork",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "upwork",
+    "freelance",
+    "hiring",
+    "jobs",
+    "contracts",
+    "proposals",
+    "mcp"
+  ],
+  "mcpServers": {
+    "upwork": {
+      "type": "http",
+      "url": "https://mcp.upwork.com/mcp"
+    }
+  }
+}

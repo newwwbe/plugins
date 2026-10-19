@@ -1,0 +1,21 @@
+{
+  "name": "advisor",
+  "version": "1.0.0-claude.1",
+  "description": "Consult a stronger model at key checkpoints: before major decisions, when stuck on an error, and before declaring a task done. A read-only Opus advisor subagent gets a full briefing plus the conversation transcript, returns guidance, and the main model keeps doing the work.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/plugins/advisor",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "advisor",
+    "second-opinion",
+    "opus",
+    "subagents",
+    "review",
+    "quality",
+    "hooks"
+  ]
+}

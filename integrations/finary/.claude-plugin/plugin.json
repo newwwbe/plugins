@@ -1,0 +1,30 @@
+{
+  "name": "finary",
+  "version": "1.0.0",
+  "description": "Read your net worth, accounts, holdings, spending, and budgets.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/finary",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "finary",
+    "wealth",
+    "net worth",
+    "portfolio",
+    "investments",
+    "accounts",
+    "budget",
+    "spending",
+    "personal finance",
+    "mcp"
+  ],
+  "mcpServers": {
+    "finary": {
+      "type": "http",
+      "url": "https://public-api.finary.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "sp-global",
+  "version": "1.0.0",
+  "description": "Query S&P Capital IQ financials, prices, and transcripts.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/sp-global",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "sp global",
+    "kensho",
+    "kfinance",
+    "capital iq",
+    "financials",
+    "market data",
+    "earnings transcripts",
+    "mcp"
+  ],
+  "mcpServers": {
+    "sp-global": {
+      "type": "http",
+      "url": "https://kfinance.kensho.com/integrations/mcp"
+    }
+  }
+}

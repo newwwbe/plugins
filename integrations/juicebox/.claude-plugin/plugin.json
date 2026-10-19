@@ -1,0 +1,27 @@
+{
+  "name": "juicebox",
+  "version": "1.0.0",
+  "description": "Query recruiting analytics, shortlists, and sourcing agents.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/juicebox",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "juicebox",
+    "recruiting",
+    "sourcing",
+    "candidates",
+    "shortlist",
+    "agents",
+    "mcp"
+  ],
+  "mcpServers": {
+    "juicebox": {
+      "type": "http",
+      "url": "https://mcp.juicebox.ai/v1"
+    }
+  }
+}

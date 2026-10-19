@@ -1,0 +1,28 @@
+{
+  "name": "coinbase",
+  "version": "1.0.0",
+  "description": "Check balances, get quotes, and preview or place trades.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/coinbase",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "coinbase",
+    "crypto",
+    "trading",
+    "portfolio",
+    "balances",
+    "market data",
+    "advanced trade",
+    "mcp"
+  ],
+  "mcpServers": {
+    "coinbase": {
+      "type": "http",
+      "url": "https://agents.coinbase.com/mcp"
+    }
+  }
+}

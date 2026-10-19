@@ -1,0 +1,25 @@
+{
+  "name": "jotform",
+  "version": "1.0.0",
+  "description": "Create and edit forms, then read submissions.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/jotform",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "jotform",
+    "forms",
+    "submissions",
+    "surveys",
+    "mcp"
+  ],
+  "mcpServers": {
+    "jotform": {
+      "type": "http",
+      "url": "https://mcp.jotform.com"
+    }
+  }
+}

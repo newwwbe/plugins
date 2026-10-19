@@ -1,0 +1,27 @@
+{
+  "name": "semrush",
+  "version": "1.0.0",
+  "description": "Research keywords, backlinks, traffic, and competitors.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/semrush",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "semrush",
+    "seo",
+    "keywords",
+    "backlinks",
+    "competitive-intelligence",
+    "marketing",
+    "mcp"
+  ],
+  "mcpServers": {
+    "semrush": {
+      "type": "http",
+      "url": "https://mcp.semrush.com/v2/mcp"
+    }
+  }
+}

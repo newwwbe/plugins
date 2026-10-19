@@ -1,0 +1,28 @@
+{
+  "name": "interactive-brokers",
+  "version": "1.0.0",
+  "description": "Review positions, balances, P&L, and draft trade instructions.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/interactive-brokers",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "interactive brokers",
+    "ibkr",
+    "brokerage",
+    "trading",
+    "portfolio",
+    "positions",
+    "market data",
+    "mcp"
+  ],
+  "mcpServers": {
+    "interactive-brokers": {
+      "type": "http",
+      "url": "https://api.ibkr.com/v1/api/mcp-public"
+    }
+  }
+}

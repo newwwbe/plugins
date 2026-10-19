@@ -1,0 +1,19 @@
+{
+  "name": "continual-learning",
+  "version": "1.0.0-claude.1",
+  "description": "Incrementally learns durable user preferences and workspace facts from Claude Code transcript changes and keeps AGENTS.md up to date with plain bullet points.",
+  "author": {
+    "name": "Eric Zakariasson"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/plugins/continual-learning",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "continual-learning",
+    "agent-memory",
+    "transcripts",
+    "hooks",
+    "incremental",
+    "agents-md"
+  ]
+}

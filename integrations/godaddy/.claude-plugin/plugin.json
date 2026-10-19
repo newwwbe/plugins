@@ -1,0 +1,26 @@
+{
+  "name": "godaddy",
+  "version": "1.0.0",
+  "description": "Brainstorm domain names and check availability.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/godaddy",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "godaddy",
+    "domains",
+    "dns",
+    "availability",
+    "registration",
+    "mcp"
+  ],
+  "mcpServers": {
+    "godaddy": {
+      "type": "http",
+      "url": "https://api.godaddy.com/v1/domains/mcp"
+    }
+  }
+}

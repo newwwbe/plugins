@@ -1,0 +1,26 @@
+{
+  "name": "calendly",
+  "version": "1.0.0",
+  "description": "Check availability and book, cancel, or reschedule.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/calendly",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "calendly",
+    "scheduling",
+    "calendar",
+    "meetings",
+    "availability",
+    "mcp"
+  ],
+  "mcpServers": {
+    "calendly": {
+      "type": "http",
+      "url": "https://mcp.calendly.com/"
+    }
+  }
+}

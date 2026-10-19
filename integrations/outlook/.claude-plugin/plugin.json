@@ -1,0 +1,25 @@
+{
+  "name": "outlook",
+  "version": "1.0.0",
+  "description": "Search, read, and send Microsoft Outlook email, and look up contacts.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/outlook",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "outlook",
+    "email",
+    "microsoft",
+    "mcp",
+    "contacts"
+  ],
+  "mcpServers": {
+    "outlook": {
+      "type": "http",
+      "url": "https://api.cursor.com/rest-mcp/outlook/mcp"
+    }
+  }
+}

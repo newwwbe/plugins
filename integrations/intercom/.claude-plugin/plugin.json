@@ -1,0 +1,27 @@
+{
+  "name": "intercom",
+  "version": "1.0.0",
+  "description": "Search conversations, contacts, and Help Center articles.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/intercom",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "intercom",
+    "mcp",
+    "support",
+    "conversations",
+    "contacts",
+    "help-center",
+    "customer-support"
+  ],
+  "mcpServers": {
+    "intercom": {
+      "type": "http",
+      "url": "https://mcp.intercom.com/mcp"
+    }
+  }
+}

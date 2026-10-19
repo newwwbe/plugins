@@ -1,0 +1,26 @@
+{
+  "name": "coda",
+  "version": "1.0.0",
+  "description": "Search docs, read pages, and update tables.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/coda",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "coda",
+    "superhuman",
+    "docs",
+    "tables",
+    "knowledge",
+    "mcp"
+  ],
+  "mcpServers": {
+    "coda": {
+      "type": "http",
+      "url": "https://docs.superhuman.com/apis/mcp"
+    }
+  }
+}

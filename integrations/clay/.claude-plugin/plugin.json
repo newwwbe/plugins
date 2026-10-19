@@ -1,0 +1,27 @@
+{
+  "name": "clay",
+  "version": "1.0.0",
+  "description": "Enrich people and companies, run AI research agents.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/clay",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "clay",
+    "enrichment",
+    "prospecting",
+    "gtm",
+    "sales",
+    "data",
+    "mcp"
+  ],
+  "mcpServers": {
+    "clay": {
+      "type": "http",
+      "url": "https://api.clay.com/v3/mcp"
+    }
+  }
+}

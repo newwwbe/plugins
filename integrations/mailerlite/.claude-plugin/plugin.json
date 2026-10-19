@@ -1,0 +1,27 @@
+{
+  "name": "mailerlite",
+  "version": "1.0.0",
+  "description": "Manage subscribers, groups, campaigns, and automations.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/mailerlite",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "mailerlite",
+    "email",
+    "marketing",
+    "newsletters",
+    "automations",
+    "subscribers",
+    "mcp"
+  ],
+  "mcpServers": {
+    "mailerlite": {
+      "type": "http",
+      "url": "https://mcp.mailerlite.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "outlook-calendar",
+  "version": "1.0.0",
+  "description": "List, create, update, and cancel Microsoft Outlook calendar events.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/outlook-calendar",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "outlook-calendar",
+    "calendar",
+    "outlook",
+    "microsoft",
+    "mcp",
+    "events"
+  ],
+  "mcpServers": {
+    "outlook-calendar": {
+      "type": "http",
+      "url": "https://api.cursor.com/rest-mcp/outlook-calendar/mcp"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "gong",
+  "version": "1.0.0",
+  "description": "Pull account summaries, deal insights, and call briefs.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/gong",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "gong",
+    "mcp",
+    "revenue",
+    "sales",
+    "calls",
+    "deals"
+  ],
+  "mcpServers": {
+    "gong": {
+      "url": "https://mcp.gong.io/mcp",
+      "type": "http",
+      "oauth": {
+        "clientId": "${user_config.CLIENT_ID}",
+        "clientSecret": "${user_config.CLIENT_SECRET}"
+      }
+    }
+  },
+  "userConfig": {
+    "CLIENT_ID": {
+      "type": "string",
+      "title": "Gong Client ID",
+      "description": "OAuth Client ID from Gong Admin → Company Settings → Ecosystem → API → Integrations (MCP integration).",
+      "required": true
+    },
+    "CLIENT_SECRET": {
+      "type": "string",
+      "title": "Gong Client Secret",
+      "description": "OAuth Client Secret from the same Gong MCP integration.",
+      "required": true,
+      "sensitive": true
+    }
+  }
+}

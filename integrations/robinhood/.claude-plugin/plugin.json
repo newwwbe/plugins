@@ -1,0 +1,30 @@
+{
+  "name": "robinhood",
+  "version": "1.0.0",
+  "description": "View portfolios, positions, orders, watchlists, and market data, and trade in a Robinhood Agentic account.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/robinhood",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "robinhood",
+    "brokerage",
+    "trading",
+    "portfolio",
+    "stocks",
+    "options",
+    "crypto",
+    "market data",
+    "watchlists",
+    "mcp"
+  ],
+  "mcpServers": {
+    "robinhood": {
+      "type": "http",
+      "url": "https://agent.robinhood.com/mcp/trading"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "webull",
+  "version": "1.0.1",
+  "description": "View accounts, positions, orders, watchlists, and market data.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/webull",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "webull",
+    "brokerage",
+    "trading",
+    "portfolio",
+    "quotes",
+    "watchlists",
+    "market data",
+    "mcp"
+  ],
+  "mcpServers": {
+    "webull": {
+      "type": "http",
+      "url": "https://api.webull.com/mcp"
+    }
+  }
+}

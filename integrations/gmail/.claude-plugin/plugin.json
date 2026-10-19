@@ -1,0 +1,25 @@
+{
+  "name": "gmail",
+  "version": "1.0.0",
+  "description": "Search, read, draft, and manage email.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/gmail",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "gmail",
+    "email",
+    "google",
+    "mcp",
+    "workspace"
+  ],
+  "mcpServers": {
+    "gmail": {
+      "type": "http",
+      "url": "https://gmailmcp.googleapis.com/mcp/v1"
+    }
+  }
+}

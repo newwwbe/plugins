@@ -1,0 +1,26 @@
+{
+  "name": "mem",
+  "version": "1.0.0",
+  "description": "Capture, search, and organize notes and collections.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/mem",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "mem",
+    "mem.ai",
+    "notes",
+    "knowledge",
+    "semantic-search",
+    "mcp"
+  ],
+  "mcpServers": {
+    "mem": {
+      "type": "http",
+      "url": "https://mcp.mem.ai/mcp"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "outreach",
+  "version": "1.0.0",
+  "description": "Search sequences, prospects, and Kaia meetings.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/integrations/outreach",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "outreach",
+    "sales",
+    "sequences",
+    "prospects",
+    "kaia",
+    "crm",
+    "mcp"
+  ],
+  "mcpServers": {
+    "outreach": {
+      "type": "http",
+      "url": "https://api.outreach.io/mcp"
+    }
+  }
+}
