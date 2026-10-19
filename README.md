@@ -1,3 +1,62 @@
+# newwwbe Claude Code plugins
+
+This fork is a Claude Code marketplace (`newwwbe`). It bundles [anti-slop](https://github.com/newwwbe/anti-slop), [attention-span](https://github.com/newwwbe/attention-span), and Claude Code ports of the Cursor plugins below (`claude-code/` and `third_party/*/.claude-plugin/`). The Cursor files are unchanged.
+
+## Set up any machine in one line
+
+macOS / Linux / WSL:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/newwwbe/plugins/main/install.sh | bash
+```
+
+Windows (PowerShell):
+
+```powershell
+irm https://raw.githubusercontent.com/newwwbe/plugins/main/install.ps1 | iex
+```
+
+This adds the marketplace, installs the default set at user scope, and sets the default output style to `attention-span:Attention-kind`. Run it again any time; it is safe to repeat and picks up updates.
+
+Default set: `attention-span anti-slop thermos pstack cursor-team-kit dyl-stack advisor ralph-loop orchestrate create-plugin agent-compatibility cli-for-agent teaching docs-canvas pr-review-canvas`
+
+Options (bash: `curl ... | bash -s -- <options>`):
+
+| Option | Effect |
+|:--|:--|
+| `--add "github notion"` | Also install these (e.g. MCP integrations; set their keys with `claude plugin configure <name>`) |
+| `--plugins "a b"` | Install exactly these instead of the default set |
+| `--style NAME` / `--no-style` | Choose or skip the default output style |
+
+Not in the default set: the 84 MCP integrations (each needs its own sign-in), `continual-learning` (edits AGENTS.md automatically), and `cursor-sdk`, `origin-apps`, `grok-voice` (Cursor/xAI-specific).
+
+## Without the script
+
+Put this in `~/.claude/settings.json` (all machines), or in a repository's `.claude/settings.json` to share it with everyone who opens that repo. Claude Code fetches the plugins on the next start and loads them from the start after that.
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "newwwbe": { "source": { "source": "github", "repo": "newwwbe/plugins" } }
+  },
+  "enabledPlugins": {
+    "attention-span@newwwbe": true,
+    "anti-slop@newwwbe": true,
+    "thermos@newwwbe": true,
+    "pstack@newwwbe": true
+  },
+  "outputStyle": "attention-span:Attention-kind"
+}
+```
+
+Or inside Claude Code: `/plugin marketplace add newwwbe/plugins`, then `/plugin install <name>@newwwbe`.
+
+## Claude Code on the web
+
+Cloud sessions start from a fresh container, so add the one-line installer to the environment's **Setup script** (environment menu in the session title bar → Edit), or commit the settings block above to the repository's `.claude/settings.json`.
+
+---
+
 # Cursor plugins
 
 Official Cursor plugins for popular developer tools, frameworks, and SaaS products. Each plugin is a standalone directory at the repository root with its own `.cursor-plugin/plugin.json` manifest.
