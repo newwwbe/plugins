@@ -1,0 +1,23 @@
+{
+  "name": "cursor-sdk",
+  "version": "1.0.0-claude.1",
+  "description": "Knowledge skill for building apps, scripts, CI pipelines, and automations on the Cursor TypeScript SDK (@cursor/sdk), usable from Claude Code. Requires a Cursor account and API key at run time of the code you build.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/claude-code/cursor-sdk",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": [
+    "cursor-sdk",
+    "cursor",
+    "sdk",
+    "typescript",
+    "agents",
+    "automation",
+    "ci",
+    "mcp",
+    "streaming"
+  ]
+}

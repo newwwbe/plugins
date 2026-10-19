@@ -434,6 +434,26 @@
       "name": "zoom",
       "source": "./third_party/zoom",
       "description": "Search meetings, pull transcripts, and work with Zoom Docs."
+    },
+    {
+      "name": "cursor-sdk",
+      "source": "./claude-code/cursor-sdk",
+      "description": "Knowledge skill for building apps, scripts, CI pipelines, and automations on the Cursor TypeScript SDK (@cursor/sdk), usable from Claude Code. Requires a Cursor account and API key at run time of the code you build."
+    },
+    {
+      "name": "docs-canvas",
+      "source": "./claude-code/docs-canvas",
+      "description": "Render documentation (architecture notes, API references, runbooks, codebase walkthroughs) as a navigable, self-contained HTML page you open in a browser."
+    },
+    {
+      "name": "pr-review-canvas",
+      "source": "./claude-code/pr-review-canvas",
+      "description": "Render PR diffs as a self-contained HTML review page grouped by reviewer importance, with pseudocode, example traces, and callouts for tricky hunks."
+    },
+    {
+      "name": "grok-voice",
+      "source": "./claude-code/grok-voice",
+      "description": "Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions."
     }
   ],
   "metadata": {

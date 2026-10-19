@@ -1,0 +1,13 @@
+{
+  "name": "docs-canvas",
+  "version": "0.1.0-claude.1",
+  "description": "Render documentation (architecture notes, API references, runbooks, codebase walkthroughs) as a navigable, self-contained HTML page you open in a browser.",
+  "author": {
+    "name": "Cursor",
+    "email": "plugins@cursor.com"
+  },
+  "homepage": "https://github.com/newwwbe/plugins/tree/main/claude-code/docs-canvas",
+  "repository": "https://github.com/newwwbe/plugins",
+  "license": "MIT",
+  "keywords": ["canvas", "documentation", "docs", "architecture", "reference", "html"]
+}
